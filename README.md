@@ -1,16 +1,85 @@
-## Hi there 👋
+# Hola, soy Christian Albornoz ✨
 
-<!--
-**ChrisTkm/ChrisTkm** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+![Banner](https://via.placeholder.com/800x200?text=Chris's+Solutions+-+Full+Stack+Developer)
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 📊 Sobre mí
+
+Soy un profesional con más de 11 años de experiencia laboral en contabilidad, finanzas y tecnología. En el último año, he dado un giro hacia el desarrollo **full stack**, una pasión que descubrí al explorar **Python** y herramientas modernas de desarrollo web. Actualmente, estoy enfocando mi carrera en el desarrollo **frontend** y **backend**, con un interés particular en la **ciberseguridad**.
+
+---
+
+## 📈 GitHub Stats
+
+![Christian's GitHub Stats](https://github-readme-stats.vercel.app/api?username=ChrisTkm&show_icons=true&theme=gotham) ![Christian's GitHub Streak](https://streak-stats.demolab.com/?user=DenverCoder1&theme=gotham)
+
+---
+
+## 🛠️ Skill Set
+
+![Christian's Skill Set](https://skillicons.dev/icons?i=js,html,css,react,py,ts,django,azure,figma,arduino,arch,vite,vscode)
+---
+
+## 🌍 Proyectos destacados
+
+### 🔎 **E-commerce de Joyas (Bawhit)**
+
+- Desarrollo de una aplicación completa de comercio electrónico con un enfoque en diseño molecular.
+- Tecnologías utilizadas: React, TypeScript, Django, Azure.
+- Repositorios principales:
+  - **Frontend Admin**: Diseñado para la gestión de la tienda.
+  - **Frontend Bawhit**: Interfaz de usuario para clientes.
+
+### 🛠️ **Infraestructura personal**
+
+- Planeo adquirir un **servidor NAS** para crear una nube personal.
+- Experiencia inicial instalando **Linux Arch** en una máquina virtual.
+
+### 💼 **Chris's Solutions**
+
+- Proyecto en desarrollo para convertirlo en el proveedor oficial de servicios tecnológicos para **Bawhit**.
+- Enfoque en ofrecer soluciones integrales, desde infraestructura hasta desarrollo y soporte.
+- Objetivo: Crear una marca sólida y confiable en el mundo de los servicios digitales.
+
+---
+
+## 🛣️ Tecnologías y herramientas
+
+- **Lenguajes:** Python, JavaScript, TypeScript, SQL, HTML, CSS.
+- **Frameworks:** Django, React.
+- **Bases de datos:** SQL Server, Azure SQL.
+- **Herramientas:** Git, Visual Studio Code, Azure Data Studio.
+- **Diseño:** Figma, Clip Studio Paint.
+
+---
+
+## 🚀 Objetivos
+
+Mi meta es seguir desarrollando mis habilidades técnicas y creativas, especialmente en:
+
+- **Frontend moderno**: Dominar React y TypeScript.
+- **Backend robusto**: Mejorar en Django y ciberseguridad.
+- **Proyectos personales**: Crear soluciones impactantes y estéticas.
+- **Ciberseguridad**: Profundizar en sistemas como Linux Parrot y Arch.
+- **Infraestructura**: Levantar un servidor NAS para crear una nube personal.
+- **Chris's Solutions**: Consolidar esta iniciativa como una empresa reconocida en el sector tecnológico.
+
+---
+
+## 🌟 Curiosidades
+
+- Me inspira el desafío de crear páginas web y aplicaciones funcionales.
+- Uso IA para acelerar mi aprendizaje y mejorar mis proyectos.
+- Estoy interesado en el mundo de la **ciberseguridad** y en aprender sobre máquinas virtuales Linux.
+- Disfruto trabajar con metodologías ágiles y herramientas modernas.
+
+---
+
+## 📢 Contacto
+
+- **Email:** [christian.albornozm@outlook.com](mailto:christian.albornozm@outlook.com)
+- **Portafolio:** [En desarrollo]
+
+![Footer](https://via.placeholder.com/800x50?text=Chris's+Solutions+-+Innovando+en+Tecnología+%F0%9F%94%A5)
+
