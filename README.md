@@ -1,6 +1,10 @@
-# Hola, soy Christian Albornoz ✨
+<div align="center">
+  <h1>Hola, soy Christian Albornoz ✨</h1>
+</div>
 
-![Banner](https://raw.githubusercontent.com/ChrisTkm/ChrisTkm/refs/heads/main/Captura%20de%20pantalla%202024-12-29%20213411.png)
+<div align="center">
+  <img src="https://raw.githubusercontent.com/ChrisTkm/ChrisTkm/refs/heads/main/Captura%20de%20pantalla%202024-12-29%20213411.png" alt="Banner">
+</div>
 
 ---
 
@@ -18,8 +22,9 @@ Soy un profesional con más de 11 años de experiencia laboral en contabilidad, 
 
 ## 🛠️ Skill Set
 
-![Christian's Skill Set](https://skillicons.dev/icons?i=js,html,css,react,py,ts,django,azure,figma,arduino,arch,vite,vscode)
----
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=js,html,css,react,py,ts,django,azure,figma,arduino,arch,vite,vscode" alt="Skill Set">
+</div>
 
 ## 🌍 Proyectos destacados
 
@@ -81,5 +86,7 @@ Mi meta es seguir desarrollando mis habilidades técnicas y creativas, especialm
 - **Email:** [christian.albornozm@outlook.com](mailto:christian.albornozm@outlook.com)
 - **Portafolio:** [En desarrollo]
 
-![Footer](https://raw.githubusercontent.com/ChrisTkm/ChrisTkm/refs/heads/main/Captura%20de%20pantalla%202024-12-29%20213411.png)
+<div align="center">
+  <img src="https://raw.githubusercontent.com/ChrisTkm/ChrisTkm/refs/heads/main/Captura%20de%20pantalla%202024-12-29%20213411.png" alt="Footer">
+</div>
 
