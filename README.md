@@ -52,16 +52,6 @@ Soy un profesional con más de 11 años de experiencia laboral en contabilidad, 
 
 ---
 
-## 🛣️ Tecnologías y herramientas
-
-- **Lenguajes:** Python, JavaScript, TypeScript, SQL, HTML, CSS.
-- **Frameworks:** Django, React.
-- **Bases de datos:** SQL Server, Azure SQL.
-- **Herramientas:** Git, Visual Studio Code, Azure Data Studio.
-- **Diseño:** Figma, Clip Studio Paint.
-
----
-
 ## 🚀 Objetivos
 
 Mi meta es seguir desarrollando mis habilidades técnicas y creativas, especialmente en:
