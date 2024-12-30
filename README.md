@@ -1,6 +1,6 @@
 # Hola, soy Christian Albornoz ✨
 
-![Banner](https://via.placeholder.com/800x200?text=Chris's+Solutions+-+Full+Stack+Developer)
+![Banner](https://raw.githubusercontent.com/ChrisTkm/ChrisTkm/refs/heads/main/Captura%20de%20pantalla%202024-12-29%20213411.png)
 
 ---
 
@@ -81,5 +81,5 @@ Mi meta es seguir desarrollando mis habilidades técnicas y creativas, especialm
 - **Email:** [christian.albornozm@outlook.com](mailto:christian.albornozm@outlook.com)
 - **Portafolio:** [En desarrollo]
 
-![Footer](https://via.placeholder.com/800x50?text=Chris's+Solutions+-+Innovando+en+Tecnología+%F0%9F%94%A5)
+![Footer](https://raw.githubusercontent.com/ChrisTkm/ChrisTkm/refs/heads/main/Captura%20de%20pantalla%202024-12-29%20213411.png)
 
