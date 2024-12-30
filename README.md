@@ -15,9 +15,9 @@ Soy un profesional con más de 11 años de experiencia laboral en contabilidad, 
 ---
 
 ## 📈 GitHub Stats
-<div align="center" style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
-  <img src="https://github-readme-stats.vercel.app/api?username=ChrisTkm&show_icons=true&theme=gotham" alt="GitHub Stats" style="max-width: 45%; height: auto; margin-right: 10px;">
-  <img src="https://streak-stats.demolab.com/?user=ChrisTkm&theme=gotham" alt="GitHub Streak" style="max-width: 45%; height: auto;">
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=ChrisTkm&show_icons=true&theme=gotham" alt="GitHub Stats" width="400">
+  <img src="https://streak-stats.demolab.com/?user=ChrisTkm&theme=gotham" alt="GitHub Streak" width="400">
 </div>
 
 
