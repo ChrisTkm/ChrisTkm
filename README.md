@@ -76,7 +76,7 @@ Mi meta es seguir desarrollando mis habilidades técnicas y creativas, especialm
 
 ## 📢 Contacto
 
-- **Email:** [christian.albornozm@outlook.com](mailto:christian.albornozm@outlook.com)
+- **Email:** [chris@albornoz.studio](mailto:chris@albornoz.studio)
 - **Portafolio:** [En desarrollo]
 
 <div align="center">
