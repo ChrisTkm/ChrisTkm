@@ -3,7 +3,7 @@
 </div>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/ChrisTkm/ChrisTkm/refs/heads/main/Captura%20de%20pantalla%202024-12-29%20213411.png" alt="Banner">
+  <img src="https://raw.githubusercontent.com/ChrisTkm/ChrisTkm/refs/heads/main/banner.png" alt="Banner">
 </div>
 
 ---
@@ -79,7 +79,11 @@ Mi meta es seguir desarrollando mis habilidades técnicas y creativas, especialm
 - **Email:** [chris@albornoz.studio](mailto:chris@albornoz.studio)
 - **Portafolio:** [En desarrollo]
 
-<div align="center">
-  <img src="https://raw.githubusercontent.com/ChrisTkm/ChrisTkm/refs/heads/main/Captura%20de%20pantalla%202024-12-29%20213411.png" alt="Footer">
+<div style="text-align:center;">
+  <img 
+    src="https://raw.githubusercontent.com/ChrisTkm/ChrisTkm/refs/heads/main/banner.png" 
+    alt="Banner"
+    style="max-width:100%;height:auto;"
+  >
 </div>
 
