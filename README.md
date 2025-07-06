@@ -81,7 +81,7 @@ Mi meta es seguir desarrollando mis habilidades técnicas y creativas, especialm
 
 <div style="text-align:center;">
   <img 
-    src="https://raw.githubusercontent.com/ChrisTkm/ChrisTkm/refs/heads/main/banner3.png" 
+    src="https://raw.githubusercontent.com/ChrisTkm/ChrisTkm/refs/heads/main/banner4.png" 
     alt="Banner"
     style="max-width:100%;height:auto;"
   >
