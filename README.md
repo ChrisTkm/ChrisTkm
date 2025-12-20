@@ -90,7 +90,7 @@ Plataforma e-commerce completa con foco en experiencia de usuario y administraci
 
 <div align="center">
   <img 
-    src="https://raw.githubusercontent.com/ChrisTkm/ChrisTkm/refs/heads/main/banner5.png" 
+    src="https://raw.githubusercontent.com/ChrisTkm/ChrisTkm/refs/heads/main/footer.png" 
     alt="Footer Banner"
     style="max-width:100%;height:auto;"
   >
