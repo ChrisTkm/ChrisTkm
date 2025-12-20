@@ -14,7 +14,6 @@ Soy **Contador Auditor transformado en Ingeniero de Software**.
 Combino **+11 años de experiencia financiera** con arquitectura de software moderna para crear herramientas que entienden el negocio.
 Diseño sistemas que resuelven problemas contables reales, priorizando la solidez del dato y la experiencia del usuario.
 
-
 ---
 
 ## 🚀 Ecosistema Contable (Work in Progress)
@@ -22,25 +21,31 @@ Diseño sistemas que resuelven problemas contables reales, priorizando la solide
 Actualmente, estoy construyendo desde cero un **Sistema Contable de última generación**, dividido en tres proyectos pilares que reflejan mi filosofía de arquitectura robusta y moderna:
 
 ### 🏛️ **Project Sevastopol (Frontend)**
+
 *El rostro del sistema.*
+
 - **Arquitectura**: Astro + React + Islands Architecture.
 - **Enfoque**: UI/UX premium, SSR-first y mínima hidratación en cliente.
 - **Highlights**:
-    - Diseño Atómico (Molecules/Organisms) para vistas de Nómina (Payroll) y Libros Contables.
-    - Componentes interactivos aislados para máximo rendimiento.
-    - Estilizado con TailwindCSS para una experiencia visual pulida.
+  - Diseño Atómico (Molecules/Organisms) para vistas de Nómina (Payroll) y Libros Contables.
+  - Componentes interactivos aislados para máximo rendimiento.
+  - Estilizado con TailwindCSS para una experiencia visual pulida.
 
 ### ⚙️ **Project Nostromo (Core)**
+
 *El motor.*
+
 - **Arquitectura**: Backend **FastAPI** robusto diseñado para multi-tenancy real.
 - **Database**: PostgreSQL con modelado estricto y reglas de integridad financiera.
 - **Highlights**:
-    - ETLs complejos e idempotentes para procesamiento masivo.
-    - Lógica de cálculo de remuneraciones y asientos contables automatizados.
-    - Seguridad y aislamiento de datos por tenant.
+  - ETLs complejos e idempotentes para procesamiento masivo.
+  - Lógica de cálculo de remuneraciones y asientos contables automatizados.
+  - Seguridad y aislamiento de datos por tenant.
 
 ### 📚 **[Project Jean d'Arc](https://github.com/ChrisTkm/jean_d_arc) (Knowledge)**
+
 *La sabiduría.*
+
 - **Stack**: Astro Starlight.
 - **Propósito**: Documentación viva, guías de arquitectura y manuales de usuario integrados.
 - Transforma el conocimiento técnico y de dominio en una base accesible.
