@@ -8,82 +8,90 @@
 
 ---
 
-## 📊 Sobre mí
+## 👋 Sobre mí
 
-Soy un profesional con más de 11 años de experiencia laboral en contabilidad, finanzas y tecnología. En el último año, he dado un giro hacia el desarrollo **full stack**, una pasión que descubrí al explorar **Python** y herramientas modernas de desarrollo web. Actualmente, estoy enfocando mi carrera en el desarrollo **frontend** y **backend**, con un interés particular en la **ciberseguridad**.
+Soy desarrollador **full stack** con background en **contabilidad y finanzas** (+11 años), actualmente enfocado en construir **sistemas web sólidos, estéticos y bien estructurados**.
+
+Trabajo principalmente con **Python, TypeScript y React**, integrando frontend, backend e infraestructura.  
+Me interesa especialmente el diseño de **sistemas contables**, la **arquitectura de aplicaciones**, Linux y la **ciberseguridad**.
+
+Disfruto transformar procesos complejos en software claro y mantenible.
 
 ---
 
 ## 📈 GitHub Stats
+
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=ChrisTkm&show_icons=true&theme=gotham" alt="GitHub Stats" height="170">
   <img src="https://streak-stats.demolab.com/?user=ChrisTkm&theme=gotham" alt="GitHub Streak" height="170">
 </div>
 
-
 ---
 
-## 🛠️ Skill Set
+## 🛠️ Stack principal
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=js,html,css,react,py,ts,django,azure,figma,arduino,arch,vite,vscode" alt="Skill Set">
+  <img src="https://skillicons.dev/icons?i=js,ts,react,html,css,py,django,azure,vite,figma,arch,vscode" alt="Skill Set">
 </div>
+
+---
 
 ## 🌍 Proyectos destacados
 
-### 🔎 **E-commerce de Joyas (Bawhit)**
+### 🔎 **Accounting System** (en desarrollo)
 
-- Desarrollo de una aplicación completa de comercio electrónico con un enfoque en diseño molecular.
-- Tecnologías utilizadas: React, TypeScript, Django, Azure.
-- Repositorios principales:
-  - **Frontend Admin**: Diseñado para la gestión de la tienda.
-  - **Frontend Bawhit**: Interfaz de usuario para clientes.
+Sistema contable web diseñado desde cero, enfocado en **claridad, control y escalabilidad**.
 
-### 🛠️ **Infraestructura personal**
+- Backend en **PostgreSQL** con modelado contable estructurado
+- Frontend moderno con **Astro + Islands Architecture**
+- Uso de **TypeScript** para tipado estricto y mantenibilidad
+- Enfoque en procesos contables reales (no solo CRUD)
+- Separación clara entre lógica de dominio y presentación
 
-- Planeo adquirir un **servidor NAS** para crear una nube personal.
-- Experiencia inicial instalando **Linux Arch** en una máquina virtual.
-
-### 💼 **Chris's Solutions**
-
-- Proyecto en desarrollo para convertirlo en el proveedor oficial de servicios tecnológicos para **Bawhit**.
-- Enfoque en ofrecer soluciones integrales, desde infraestructura hasta desarrollo y soporte.
-- Objetivo: Crear una marca sólida y confiable en el mundo de los servicios digitales.
+> Proyecto orientado a aprender y aplicar buenas prácticas de arquitectura, UI y dominio contable.
 
 ---
 
-## 🚀 Objetivos
+### 🛒 **E-commerce de Joyas (Bawhit)**
 
-Mi meta es seguir desarrollando mis habilidades técnicas y creativas, especialmente en:
+Plataforma e-commerce completa con foco en experiencia de usuario y administración eficiente.
 
-- **Frontend moderno**: Dominar React y TypeScript.
-- **Backend robusto**: Mejorar en Django y ciberseguridad.
-- **Proyectos personales**: Crear soluciones impactantes y estéticas.
-- **Ciberseguridad**: Profundizar en sistemas como Linux Parrot y Arch.
-- **Infraestructura**: Levantar un servidor NAS para crear una nube personal.
-- **Chris's Solutions**: Consolidar esta iniciativa como una empresa reconocida en el sector tecnológico.
+- Arquitectura separada (admin / frontend cliente)
+- Diseño molecular y componentes reutilizables
+- Stack: **React, TypeScript, Django, Azure**
+- Pensado para escalar y mantenerse en el tiempo
 
 ---
 
-## 🌟 Curiosidades
+## 🚀 En qué estoy trabajando ahora
 
-- Me inspira el desafío de crear páginas web y aplicaciones funcionales.
-- Uso IA para acelerar mi aprendizaje y mejorar mis proyectos.
-- Estoy interesado en el mundo de la **ciberseguridad** y en aprender sobre máquinas virtuales Linux.
-- Disfruto trabajar con metodologías ágiles y herramientas modernas.
+- **Frontend moderno** con React, TypeScript y Astro
+- **Backend** con Django y PostgreSQL
+- **Sistemas contables** y modelado de dominio
+- **Linux & ciberseguridad** (Arch / Parrot, entornos aislados)
+- **Infraestructura personal** (NAS y nube privada)
 
 ---
 
-## 📢 Contacto
+## 🌱 Intereses técnicos
+
+- Arquitectura limpia y desacoplada
+- Sistemas contables y financieros
+- Automatización y scripting
+- Seguridad y sistemas Linux
+- Uso de IA como acelerador de aprendizaje
+
+---
+
+## 📬 Contacto
 
 - **Email:** [chris@albornoz.studio](mailto:chris@albornoz.studio)
-- **Portafolio:** [En desarrollo]
+- **Portafolio:** en construcción
 
-<div style="text-align:center;">
+<div align="center">
   <img 
     src="https://raw.githubusercontent.com/ChrisTkm/ChrisTkm/refs/heads/main/banner5.png" 
-    alt="Banner"
+    alt="Footer Banner"
     style="max-width:100%;height:auto;"
   >
 </div>
-
