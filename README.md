@@ -31,7 +31,7 @@ Disfruto transformar procesos complejos en software claro y mantenible.
 ## 🛠️ Stack principal
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=js,ts,react,html,css,py,django,azure,vite,figma,arch,vscode" alt="Skill Set">
+  <img src="https://skillicons.dev/icons?i=js,ts,react,html,css,py,astro,postgresql,figma,arch,vscode" alt="Skill Set">
 </div>
 
 ---
