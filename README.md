@@ -10,83 +10,69 @@
 
 ## 👋 Sobre mí
 
-Soy desarrollador **full stack** con background en **contabilidad y finanzas** (+11 años), actualmente enfocado en construir **sistemas web sólidos, estéticos y bien estructurados**.
+Soy **Contador Auditor transformado en Ingeniero de Software**.
+Combino **+11 años de experiencia financiera** con arquitectura de software moderna para crear herramientas que entienden el negocio.
+Diseño sistemas que resuelven problemas contables reales, priorizando la solidez del dato y la experiencia del usuario.
 
-Trabajo principalmente con **Python, TypeScript y React**, integrando frontend, backend e infraestructura.  
-Me interesa especialmente el diseño de **sistemas contables**, la **arquitectura de aplicaciones**, Linux y la **ciberseguridad**.
 
-Disfruto transformar procesos complejos en software claro y mantenible.
+---
+
+## 🚀 Ecosistema Contable (Work in Progress)
+
+Actualmente, estoy construyendo desde cero un **Sistema Contable de última generación**, dividido en tres proyectos pilares que reflejan mi filosofía de arquitectura robusta y moderna:
+
+### 🏛️ **Project Sevastopol (Frontend)**
+*El rostro del sistema.*
+- **Arquitectura**: Astro + React + Islands Architecture.
+- **Enfoque**: UI/UX premium, SSR-first y mínima hidratación en cliente.
+- **Highlights**:
+    - Diseño Atómico (Molecules/Organisms) para vistas de Nómina (Payroll) y Libros Contables.
+    - Componentes interactivos aislados para máximo rendimiento.
+    - Estilizado con TailwindCSS para una experiencia visual pulida.
+
+### ⚙️ **Project Nostromo (Core)**
+*El motor.*
+- **Arquitectura**: Backend **FastAPI** robusto diseñado para multi-tenancy real.
+- **Database**: PostgreSQL con modelado estricto y reglas de integridad financiera.
+- **Highlights**:
+    - ETLs complejos e idempotentes para procesamiento masivo.
+    - Lógica de cálculo de remuneraciones y asientos contables automatizados.
+    - Seguridad y aislamiento de datos por tenant.
+
+### 📚 **[Project Jean d'Arc](https://github.com/ChrisTkm/jean_d_arc) (Knowledge)**
+*La sabiduría.*
+- **Stack**: Astro Starlight.
+- **Propósito**: Documentación viva, guías de arquitectura y manuales de usuario integrados.
+- Transforma el conocimiento técnico y de dominio en una base accesible.
+
+---
+
+## 🛠️ Stack Principal
+
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=ts,react,astro,python,fastapi,postgres,linux,docker,figma,vscode&perline=10" alt="Skill Set">
+</div>
+
+* **Lenguajes**: TypeScript (Strict), Python, SQL  
+* **Frontend**: React, Astro, TailwindCSS  
+* **Backend & Data**: FastAPI (Python), SQLAlchemy, PostgreSQL  
+* **Infra & Tools**: Linux (Arch/Parrot), Docker, Git
 
 ---
 
 ## 📈 GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ChrisTkm&show_icons=true&theme=gotham" alt="GitHub Stats" height="170">
-  <img src="https://streak-stats.demolab.com/?user=ChrisTkm&theme=gotham" alt="GitHub Streak" height="170">
+    <img src="https://github-readme-stats.vercel.app/api?username=ChrisTkm&show_icons=true&theme=gotham&hide_border=true" alt="GitHub Stats" height="150">
+    <img src="https://streak-stats.demolab.com/?user=ChrisTkm&theme=gotham&hide_border=true" alt="GitHub Streak" height="150">
 </div>
-
----
-
-## 🛠️ Stack principal
-
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=js,ts,react,html,css,py,astro,postgresql,figma,arch,vscode" alt="Skill Set">
-</div>
-
----
-
-## 🌍 Proyectos destacados
-
-### 🔎 **Accounting System** (en desarrollo)
-
-Sistema contable web diseñado desde cero, enfocado en **claridad, control y escalabilidad**.
-
-- Backend en **PostgreSQL** con modelado contable estructurado
-- Frontend moderno con **Astro + Islands Architecture**
-- Uso de **TypeScript** para tipado estricto y mantenibilidad
-- Enfoque en procesos contables reales (no solo CRUD)
-- Separación clara entre lógica de dominio y presentación
-
-> Proyecto orientado a aprender y aplicar buenas prácticas de arquitectura, UI y dominio contable.
-
----
-
-### 🛒 **E-commerce de Joyas (Bawhit)**
-
-Plataforma e-commerce completa con foco en experiencia de usuario y administración eficiente.
-
-- Arquitectura separada (admin / frontend cliente)
-- Diseño molecular y componentes reutilizables
-- Stack: **React, TypeScript, Django, Azure**
-- Pensado para escalar y mantenerse en el tiempo
-
----
-
-## 🚀 En qué estoy trabajando ahora
-
-- **Frontend moderno** con React, TypeScript y Astro
-- **Backend** con Django y PostgreSQL
-- **Sistemas contables** y modelado de dominio
-- **Linux & ciberseguridad** (Arch / Parrot, entornos aislados)
-- **Infraestructura personal** (NAS y nube privada)
-
----
-
-## 🌱 Intereses técnicos
-
-- Arquitectura limpia y desacoplada
-- Sistemas contables y financieros
-- Automatización y scripting
-- Seguridad y sistemas Linux
-- Uso de IA como acelerador de aprendizaje
 
 ---
 
 ## 📬 Contacto
 
 - **Email:** [chris@albornoz.studio](mailto:chris@albornoz.studio)
-- **Portafolio:** en construcción
+- **Ubicación:** Santiago, Chile 🇨🇱
 
 <div align="center">
   <img 
