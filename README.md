@@ -69,8 +69,9 @@ Actualmente, estoy construyendo desde cero un **Sistema Contable de última gene
 ## 📈 GitHub Stats
 
 <div align="center">
-    <img src="https://github-readme-stats.vercel.app/api?username=ChrisTkm&show_icons=true&theme=gotham&hide_border=true" alt="GitHub Stats" height="150">
-    <img src="https://streak-stats.demolab.com/?user=ChrisTkm&theme=holi-theme&hide_border=true&locale=es&short_numbers=true" alt="GitHub Streak" height="150">
+    <img src="https://github-readme-stats.vercel.app/api?username=ChrisTkm&show_icons=true&theme=holi&hide_border=true&locale=es" alt="GitHub Stats" height="150">
+    <img src="https://streak-stats.demolab.com/?user=ChrisTkm&theme=holi-theme&hide_border=true&locale=es&short_numbers=true" alt="GitHub Streaks" height="150">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ChrisTkm&stats_format=bytes&theme=holi&locale=es" alt="GitHub Lenguajes" height="150">
 </div>
 
 ---
