@@ -55,7 +55,7 @@ Actualmente, estoy construyendo desde cero un **Sistema Contable de última gene
 ## 🛠️ Stack Principal
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=ts,react,astro,python,fastapi,postgres,linux,docker,figma,vscode&perline=10" alt="Skill Set">
+  <img src="https://skillicons.dev/icons?i=ts,react,astro,python,tailwind,postgres,linux,docker,figma,vscode&perline=10" alt="Skill Set">
 </div>
 
 * **Lenguajes**: TypeScript (Strict), Python, SQL  
