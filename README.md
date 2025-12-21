@@ -58,6 +58,7 @@ Actualmente, estoy construyendo desde cero un **Sistema Contable de última gene
   <img src="https://skillicons.dev/icons?i=ts,react,astro,python,tailwind,postgres,linux,docker,figma,vscode&perline=10" alt="Skill Set">
 </div>
 
+
 * **Lenguajes**: TypeScript (Strict), Python, SQL  
 * **Frontend**: React, Astro, TailwindCSS  
 * **Backend & Data**: FastAPI (Python), SQLAlchemy, PostgreSQL  
@@ -69,7 +70,7 @@ Actualmente, estoy construyendo desde cero un **Sistema Contable de última gene
 
 <div align="center">
     <img src="https://github-readme-stats.vercel.app/api?username=ChrisTkm&show_icons=true&theme=gotham&hide_border=true" alt="GitHub Stats" height="150">
-    <img src="https://streak-stats.demolab.com/?user=ChrisTkm&theme=gotham&hide_border=true" alt="GitHub Streak" height="150">
+    <img src="https://streak-stats.demolab.com?user=ChrisTkm&theme=holi-theme&hide_border=true&locale=es&short_numbers=true" alt="GitHub Streak" height="150">
 </div>
 
 ---
