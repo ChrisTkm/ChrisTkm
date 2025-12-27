@@ -1,10 +1,6 @@
-<div align="center">
-  <h1>Hola, soy Christian Albornoz ✨</h1>
-</div>
+# Hola, soy Christian Albornoz ✨
 
-<div align="center">
-  <img src="https://raw.githubusercontent.com/ChrisTkm/ChrisTkm/refs/heads/main/banner3.png" alt="Banner">
-</div>
+![hero](https://raw.githubusercontent.com/ChrisTkm/ChrisTkm/refs/heads/main/banner3.png)
 
 ---
 
@@ -20,7 +16,7 @@ Diseño sistemas que resuelven problemas contables reales, priorizando la solide
 
 Actualmente, estoy construyendo desde cero un **Sistema Contable de última generación**, dividido en tres proyectos pilares que reflejan mi filosofía de arquitectura robusta y moderna:
 
-### 🏛️ **Project Sevastopol (Frontend)**
+### 🏛️ **[Project Sevastopol](https://github.com/ChrisTkm/sevastopol) (Frontend)**
 
 *El rostro del sistema.*
 
@@ -31,7 +27,7 @@ Actualmente, estoy construyendo desde cero un **Sistema Contable de última gene
   - Componentes interactivos aislados para máximo rendimiento.
   - Estilizado con TailwindCSS para una experiencia visual pulida.
 
-### ⚙️ **Project Nostromo (Core)**
+### ⚙️ **[Project Nostromo](https://github.com/ChrisTkm/Nostromo) (Core)**
 
 *El motor.*
 
@@ -54,25 +50,20 @@ Actualmente, estoy construyendo desde cero un **Sistema Contable de última gene
 
 ## 🛠️ Stack Principal
 
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=ts,react,astro,python,tailwind,postgres,linux,docker,figma,vscode&perline=10" alt="Skill Set">
-</div>
+![Skill Set](https://skillicons.dev/icons?i=ts,react,astro,python,tailwind,postgres,linux,docker,figma,vscode&perline=10)
 
-
-* **Lenguajes**: TypeScript (Strict), Python, SQL  
-* **Frontend**: React, Astro, TailwindCSS  
-* **Backend & Data**: FastAPI (Python), SQLAlchemy, PostgreSQL  
-* **Infra & Tools**: Linux (Arch/Parrot), Docker, Git
+**Lenguajes**: TypeScript (Strict), Python, SQL  
+**Frontend**: React, Astro, TailwindCSS  
+**Backend & Data**: FastAPI (Python), SQLAlchemy, PostgreSQL  
+**Infra & Tools**: Linux (Arch/Parrot), Docker, Git
 
 ---
 
 ## 📈 GitHub Stats
 
-<div align="center">
-    <img src="https://github-readme-stats.vercel.app/api?username=ChrisTkm&show_icons=true&theme=holi&hide_border=true&locale=es" alt="GitHub Stats" height="150">
-    <img src="https://streak-stats.demolab.com/?user=ChrisTkm&theme=holi-theme&hide_border=true&locale=es&short_numbers=true" alt="GitHub Streaks" height="150">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ChrisTkm&stats_format=bytes&theme=holi&locale=es" alt="GitHub Lenguajes" height="150">
-</div>
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ChrisTkm&show_icons=true&theme=holi&hide_border=true&locale=es)
+![GitHub Streaks](https://streak-stats.demolab.com/?user=ChrisTkm&theme=holi-theme&hide_border=true&locale=es&short_numbers=true)
+![GitHub Lenguajes](https://github-readme-stats.vercel.app/api/top-langs/?username=ChrisTkm&stats_format=bytes&theme=holi&locale=es)
 
 ---
 
@@ -81,10 +72,4 @@ Actualmente, estoy construyendo desde cero un **Sistema Contable de última gene
 - **Email:** [chris@albornoz.studio](mailto:chris@albornoz.studio)
 - **Ubicación:** Santiago, Chile 🇨🇱
 
-<div align="center">
-  <img 
-    src="https://raw.githubusercontent.com/ChrisTkm/ChrisTkm/refs/heads/main/footer.png" 
-    alt="Footer Banner"
-    style="max-width:100%;height:auto;"
-  >
-</div>
+![Footer](https://raw.githubusercontent.com/ChrisTkm/ChrisTkm/refs/heads/main/footer.png)
