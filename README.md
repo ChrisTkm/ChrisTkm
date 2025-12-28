@@ -42,6 +42,8 @@ Actualmente, estoy construyendo desde cero un **Sistema Contable de última gene
 
 *La sabiduría.*
 
+> **🚀 [Ver Documentación en Vivo](https://jean-d-arc.pages.dev/)**
+
 - **Stack**: Astro Starlight.
 - **Propósito**: Documentación viva, guías de arquitectura y manuales de usuario integrados.
 - Transforma el conocimiento técnico y de dominio en una base accesible.
@@ -64,8 +66,6 @@ Actualmente, estoy construyendo desde cero un **Sistema Contable de última gene
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ChrisTkm&show_icons=true&theme=holi&hide_border=true&locale=es)
 ![GitHub Streaks](https://streak-stats.demolab.com/?user=ChrisTkm&theme=holi-theme&hide_border=true&locale=es&short_numbers=true)
 ![GitHub Lenguajes](https://github-readme-stats.vercel.app/api/top-langs/?username=ChrisTkm&stats_format=bytes&theme=holi&locale=es)
-
----
 
 ## 📬 Contacto
 
