@@ -1,6 +1,6 @@
 # Hola, soy Christian Albornoz ✨
 
-![hero](https://raw.githubusercontent.com/ChrisTkm/ChrisTkm/refs/heads/main/banner3.png)
+![header](header.svg)
 
 ---
 
@@ -12,52 +12,29 @@ Diseño sistemas que resuelven problemas contables reales, priorizando la solide
 
 ---
 
-## 🚀 Ecosistema Contable (Work in Progress)
+## 🚀 Ecosistema Contable (Nostromo)
 
-Actualmente, estoy construyendo desde cero un **Sistema Contable de última generación**, dividido en tres proyectos pilares que reflejan mi filosofía de arquitectura robusta y moderna:
+Actualmente, construyo **Nostromo**, un **Sistema Contable de última generación** diseñado con arquitectura de micro-agentes y separación estricta de responsabilidades.
 
-### 🏛️ **[Project Sevastopol](https://github.com/ChrisTkm/sevastopol) (Frontend)**
-
-*El rostro del sistema.*
-
-- **Arquitectura**: Astro + React + Islands Architecture.
-- **Enfoque**: UI/UX premium, SSR-first y mínima hidratación en cliente.
-- **Highlights**:
-  - Diseño Atómico (Molecules/Organisms) para vistas de Nómina (Payroll) y Libros Contables.
-  - Componentes interactivos aislados para máximo rendimiento.
-  - Estilizado con TailwindCSS para una experiencia visual pulida.
-
-### ⚙️ **[Project Nostromo](https://github.com/ChrisTkm/Nostromo) (Core)**
-
-*El motor.*
-
-- **Arquitectura**: Backend **FastAPI** robusto diseñado para multi-tenancy real.
-- **Database**: PostgreSQL con modelado estricto y reglas de integridad financiera.
-- **Highlights**:
-  - ETLs complejos e idempotentes para procesamiento masivo.
-  - Lógica de cálculo de remuneraciones y asientos contables automatizados.
-  - Seguridad y aislamiento de datos por tenant.
-
-### 📚 **[Project Jean d'Arc](https://github.com/ChrisTkm/jean_d_arc) (Knowledge)**
-
-*La sabiduría.*
-
-> **🚀 [Ver Documentación en Vivo](https://jean-d-arc.pages.dev/)**
-
-- **Stack**: Astro Starlight.
-- **Propósito**: Documentación viva, guías de arquitectura y manuales de usuario integrados.
-- Transforma el conocimiento técnico y de dominio en una base accesible.
+| Proyecto | Rol | Tech Stack | Link |
+| :--- | :--- | :--- | :--- |
+| **Nostromo** | 🧠 **Core & Commander** <br> Gestión de Datos, ETLs y Supervisión. | `Python` `PostgreSQL` `Data Engineering` | [Ver Repo](https://github.com/ChrisTkm/Nostromo) |
+| **Orchestrator** | ⚙️ **Backend & Truth** <br> Lógica de negocio, API y Seguridad. | `Node.js` `Express` `TypeScript` | [Ver Repo](https://github.com/ChrisTkm/Accounting/tree/main/orchestrator) |
+| **Sevastopol** | 🎨 **Frontend & UX** <br> Arquitectura de Islas y Diseño Atómico. | `Astro` `SolidJS` `Tailwind` | [Ver Repo](https://github.com/ChrisTkm/Accounting/tree/main/sevastopol) |
+| **Jean d'Arc** | 📚 **Documentation** <br> Fuente de verdad y guías técnicas. | `Astro Starlight` `Mermaid` | [Ver Docs](https://jean-d-arc.pages.dev) |
 
 ---
 
-## 🛠️ Stack Principal
+## 🛠️ Tech Stack
 
-![Skill Set](https://skillicons.dev/icons?i=ts,react,astro,python,tailwind,postgres,linux,docker,figma,vscode&perline=10)
-
-**Lenguajes**: TypeScript (Strict), Python, SQL  
-**Frontend**: React, Astro, TailwindCSS  
-**Backend & Data**: FastAPI (Python), SQLAlchemy, PostgreSQL  
-**Infra & Tools**: Linux (Arch/Parrot), Docker, Git
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![Astro](https://img.shields.io/badge/Astro-BC52EE?style=flat-square&logo=astro&logoColor=white)
+![SolidJS](https://img.shields.io/badge/SolidJS-2C4F7C?style=flat-square&logo=solid&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 
 ---
 
@@ -65,11 +42,12 @@ Actualmente, estoy construyendo desde cero un **Sistema Contable de última gene
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ChrisTkm&show_icons=true&theme=holi&hide_border=true&locale=es)
 ![GitHub Streaks](https://streak-stats.demolab.com/?user=ChrisTkm&theme=holi-theme&hide_border=true&locale=es&short_numbers=true)
-![GitHub Lenguajes](https://github-readme-stats.vercel.app/api/top-langs/?username=ChrisTkm&stats_format=bytes&theme=holi&locale=es)
+
+---
 
 ## 📬 Contacto
 
-- **Email:** [chris@albornoz.studio](mailto:chris@albornoz.studio)
-- **Ubicación:** Santiago, Chile 🇨🇱
+*   📧 [chris@albornoz.studio](mailto:chris@albornoz.studio)
+*   📍 Santiago, Chile 🇨🇱
 
 ![Footer](https://raw.githubusercontent.com/ChrisTkm/ChrisTkm/refs/heads/main/footer.png)
