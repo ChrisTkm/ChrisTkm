@@ -19,8 +19,8 @@ Actualmente, construyo **Nostromo**, un **Sistema Contable de última generació
 | Proyecto | Rol | Tech Stack | Link |
 | :--- | :--- | :--- | :--- |
 | **Nostromo** | 🧠 **Core & Commander** <br> Gestión de Datos, ETLs y Supervisión. | `Python` `PostgreSQL` `Data Engineering` | [Ver Repo](https://github.com/ChrisTkm/Nostromo) |
-| **Orchestrator** | ⚙️ **Backend & Truth** <br> Lógica de negocio, API y Seguridad. | `Node.js` `Express` `TypeScript` | [Ver Repo](https://github.com/ChrisTkm/Accounting/tree/main/orchestrator) |
-| **Sevastopol** | 🎨 **Frontend & UX** <br> Arquitectura de Islas y Diseño Atómico. | `Astro` `SolidJS` `Tailwind` | [Ver Repo](https://github.com/ChrisTkm/Accounting/tree/main/sevastopol) |
+| **Orchestrator** | ⚙️ **Backend & Truth** <br> Lógica de negocio, API y Seguridad. | `Node.js` `Express` `TypeScript` | [Ver Módulo](https://github.com/ChrisTkm/Accounting/tree/master/orchestrator) |
+| **Sevastopol** | 🎨 **Frontend & UX** <br> Arquitectura de Islas y Diseño Atómico. | `Astro` `SolidJS` `Tailwind` | [Ver Módulo](https://github.com/ChrisTkm/Accounting/tree/master/sevastopol) |
 | **Jean d'Arc** | 📚 **Documentation** <br> Fuente de verdad y guías técnicas. | `Astro Starlight` `Mermaid` | [Ver Docs](https://jean-d-arc.pages.dev) |
 
 ---
@@ -41,13 +41,10 @@ Actualmente, construyo **Nostromo**, un **Sistema Contable de última generació
 ## 📈 GitHub Stats
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ChrisTkm&show_icons=true&theme=holi&hide_border=true&locale=es)
-![GitHub Streaks](https://streak-stats.demolab.com/?user=ChrisTkm&theme=holi-theme&hide_border=true&locale=es&short_numbers=true)
 
 ---
 
 ## 📬 Contacto
 
-*   📧 [chris@albornoz.studio](mailto:chris@albornoz.studio)
-*   📍 Santiago, Chile 🇨🇱
-
-![Footer](https://raw.githubusercontent.com/ChrisTkm/ChrisTkm/refs/heads/main/footer.png)
+- 📧 [chris@albornoz.studio](mailto:chris@albornoz.studio)
+- 📍 Santiago, Chile 🇨🇱
