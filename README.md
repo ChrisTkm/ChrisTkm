@@ -18,10 +18,10 @@ Actualmente, construyo **Nostromo**, un **Sistema Contable de última generació
 
 | Proyecto | Rol | Tech Stack | Link |
 | :--- | :--- | :--- | :--- |
-| **Nostromo** | 🧠 **Core & Commander** <br> Gestión de Datos, ETLs y Supervisión. | `Python` `PostgreSQL` `Data Engineering` | [Ver Repo](https://github.com/ChrisTkm/Nostromo) |
-| **Orchestrator** | ⚙️ **Backend & Truth** <br> Lógica de negocio, API y Seguridad. | `Node.js` `Express` `TypeScript` | [Ver Módulo](https://github.com/ChrisTkm/Accounting/tree/master/orchestrator) |
-| **Sevastopol** | 🎨 **Frontend & UX** <br> Arquitectura de Islas y Diseño Atómico. | `Astro` `SolidJS` `Tailwind` | [Ver Módulo](https://github.com/ChrisTkm/Accounting/tree/master/sevastopol) |
-| **Jean d'Arc** | 📚 **Documentation** <br> Fuente de verdad y guías técnicas. | `Astro Starlight` `Mermaid` | [Ver Docs](https://jean-d-arc.pages.dev) |
+| **Nostromo** | 🧠 **Core & Commander** <br> Gestión de Datos, ETLs y Supervisión. | `Python` `PostgreSQL` `Data Engineering` | [Ver Detalle](projects/nostromo.md) |
+| **Orchestrator** | ⚙️ **Backend & Truth** <br> Lógica de negocio, API y Seguridad. | `Node.js` `Express` `TypeScript` | [Ver Detalle](projects/orchestrator.md) |
+| **Sevastopol** | 🎨 **Frontend & UX** <br> Arquitectura de Islas y Diseño Atómico. | `Astro` `SolidJS` `Tailwind` | [Ver Detalle](projects/sevastopol.md) |
+| **Jean d'Arc** | 📚 **Documentation** <br> Fuente de verdad y guías técnicas. | `Astro Starlight` `Mermaid` | [Ver Detalle](projects/jean-d-arc.md) |
 
 ---
 
