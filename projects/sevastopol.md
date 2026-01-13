@@ -10,6 +10,7 @@
 [![Built with Astro](https://img.shields.io/badge/Built%20with-Astro-BC52EE?logo=astro&logoColor=white)](https://astro.build)
 [![SolidJS](https://img.shields.io/badge/UI-SolidJS-446b9e?style=flat-square&logo=solid)](https://www.solidjs.com/)
 [![Tailwind CSS](https://img.shields.io/badge/Style-Tailwind-38bdf8?style=flat-square&logo=tailwindcss)](https://tailwindcss.com/)
+[![Agent](https://img.shields.io/badge/Agent-Sevastopol-indigo?style=flat-square&logo=robot)](#)
 
 ---
 
@@ -51,12 +52,12 @@ La estructura de componentes sigue una jerarquía estricta:
 
 ## 🛠️ Stack Tecnológico
 
-| Capa | Tecnología | Uso |
-|------|------------|-----|
-| **Core** | [Astro 5.x](https://astro.build/) | Server-Side Rendering (SSR) y Routing |
-| **Interactividad** | [SolidJS](https://www.solidjs.com/) | Componentes reactivos ligeros (Islands) |
-| **Estilos** | [Tailwind CSS](https://tailwindcss.com/) | Sistema de diseño utilitario |
-| **Testing** | [Playwright](https://playwright.dev/) | Pruebas End-to-End (E2E) |
+| Capa               | Tecnología                              | Uso                                     |
+| :----------------- | :-------------------------------------- | :-------------------------------------- |
+| **Core**           | [Astro 5.x](https://astro.build/)       | Server-Side Rendering (SSR) y Routing   |
+| **Interactividad** | [SolidJS](https://www.solidjs.com/)     | Componentes reactivos ligeros (Islands) |
+| **Estilos**        | [Tailwind CSS](https://tailwindcss.com/) | Sistema de diseño utilitario            |
+| **Testing**        | [Playwright](https://playwright.dev/)   | Pruebas End-to-End (E2E)                |
 
 ## 📂 Mapa de la Estación
 

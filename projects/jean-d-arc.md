@@ -12,7 +12,7 @@
 
 [![Built with Astro](https://img.shields.io/badge/Built%20with-Astro-BC52EE?logo=astro&logoColor=white)](https://astro.build)
 [![Starlight](https://img.shields.io/badge/Doc-Starlight-ff5e00?style=flat-square&logo=astro)](https://starlight.astro.build/)
-[![Agent](https://img.shields.io/badge/Agent-Jean%20d'Arc-blueviolet?style=flat-square&logo=github)]
+[![Agent](https://img.shields.io/badge/Agent-Jean%20d'Arc-blueviolet?style=flat-square&logo=github)](#)
 
 ---
 

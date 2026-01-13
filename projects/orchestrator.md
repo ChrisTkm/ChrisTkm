@@ -11,6 +11,7 @@
 [![TypeScript](https://img.shields.io/badge/Lang-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Express](https://img.shields.io/badge/Framework-Express%205-000000?style=flat-square&logo=express&logoColor=white)](https://expressjs.com/)
 [![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![Agent](https://img.shields.io/badge/Agent-Orchestrator-black?style=flat-square&logo=robot)](#)
 
 ---
 
@@ -36,10 +37,10 @@ Este repositorio es vigilado por el **Agente Orchestrator**, encargado de manten
 
 El backend implementa una arquitectura **Pragmatic Hybrid 2025**:
 
-| Dominio | Responsabilidad | Ubicación |
-|---------|-----------------|-----------|
-| **Writes & Logic** | Cálculos complejos (nóminas, impuestos), validaciones | TypeScript (Services) |
-| **Reads & Reports** | Listados masivos, dashboards | PostgreSQL (Smart Views) |
+| Dominio            | Responsabilidad                                       | Ubicación                |
+| :---------------- | :---------------------------------------------------- | :----------------------- |
+| **Writes & Logic** | Cálculos complejos (nóminas, impuestos), validaciones | TypeScript (Services)    |
+| **Reads & Reports** | Listados masivos, dashboards                          | PostgreSQL (Smart Views) |
 
 ### Flujo de Datos
 
@@ -51,15 +52,15 @@ Sevastopol → /api/* → Orchestrator → PostgreSQL (Multi-Tenant)
 
 ## 🛠️ Stack Tecnológico
 
-| Capa | Tecnología | Uso |
-|------|------------|-----|
-| **Runtime** | [Node.js 20+](https://nodejs.org/) | Motor de ejecución |
-| **Framework** | [Express 5.x](https://expressjs.com/) | HTTP Server y Routing |
-| **Lenguaje** | [TypeScript](https://www.typescriptlang.org/) | Tipado estricto |
-| **Base de Datos** | [PostgreSQL](https://www.postgresql.org/) | Multi-tenant via Pools |
-| **Auth** | JWT + Session Cookies | Seguridad basada en `sid` |
-| **Validación** | [express-validator](https://express-validator.github.io/) | Sanitización de inputs |
-| **Testing** | [Jest](https://jestjs.io/) + [Supertest](https://github.com/ladjs/supertest) | Unit y E2E |
+| Capa              | Tecnología                                                                       | Uso                         |
+| :---------------- | :------------------------------------------------------------------------------- | :-------------------------- |
+| **Runtime**       | [Node.js 20+](https://nodejs.org/)                                               | Motor de ejecución          |
+| **Framework**     | [Express 5.x](https://expressjs.com/)                                            | HTTP Server y Routing       |
+| **Lenguaje**      | [TypeScript](https://www.typescriptlang.org/)                                    | Tipado estricto             |
+| **Base de Datos** | [PostgreSQL](https://www.postgresql.org/)                                      | Multi-tenant via Pools      |
+| **Auth**          | JWT + Session Cookies                                                            | Seguridad basada en `sid`   |
+| **Validación**    | [express-validator](https://express-validator.github.io/)                        | Sanitización de inputs      |
+| **Testing**       | [Jest](https://jestjs.io/) + [Supertest](https://github.com/ladjs/supertest)     | Unit y E2E                  |
 
 ## 📂 Estructura del Proyecto
 

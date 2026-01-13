@@ -2,7 +2,7 @@
 
 # 🚀 Nostromo Core
 
-**El Corazón Operativo y Guardián de Datos.**
+**"El Corazón Operativo" del Ecosistema Contable.**
 
 > [!NOTE]
 > Este proyecto es **Privado**. Esta página es una vitrina de su arquitectura y propósito.
@@ -27,7 +27,7 @@ Este repositorio es el dominio del **Agente Nostromo**, una inteligencia especia
 
 - **🛡️ Guardián de Datos**: Administra y protege la estructura de la base de datos PostgreSQL (`db/`), gestionando migraciones y esquemas multi-tenant.
 - **🔄 ETL Operator**: Ejecuta pipelines de extracción y carga de datos masivos (SII, Previred, Bancos) a través del `accounting_system`.
-- **🧠 Knowledge Base Manager**: Mantiene la**Ver Matriz de Habilidades** (Privado) | **Ver Instrucciones del Agente** (Privado)a.
+- **🧠 Knowledge Base Manager**: Mantiene la **Matriz de Habilidades** y las **Instrucciones del Agente**.
 - **🛠️ Tooling & Scripts**: Provee utilidades avanzadas y scripts de mantenimiento.
 
 ---
@@ -62,7 +62,7 @@ El motor de ingesta de datos. Contiene scripts Python especializados para:
 
 ### 2. Database (DB)
 
-**Fuente de Verdad Externa**: Los esquemas productivos ("Modernos") se mantienen en el repositorio hermano `Accounting/mother` (carpeta `accunting_template`).
+**Fuente de Verdad Externa**: Los esquemas productivos ("Modernos") se mantienen en el repositorio hermano `Accounting/mother` (carpeta `accounting_template`).
 Nostromo actúa como el **motor de ejecución** y orquestación para estos esquemas.
 
 La carpeta `db/` interna de este repositorio contiene herramientas de desarrollo (`playground`), scripts de utilidad (`helpers`) y archivos históricos (`legacy_v1`).

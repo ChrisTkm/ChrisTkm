@@ -16,12 +16,12 @@ Diseño sistemas que resuelven problemas contables reales, priorizando la solide
 
 Actualmente, construyo **Nostromo**, un **Sistema Contable de última generación** diseñado con arquitectura de micro-agentes y separación estricta de responsabilidades.
 
-| Proyecto | Rol | Tech Stack | Link |
-| :--- | :--- | :--- | :--- |
-| **Nostromo** | 🧠 **Core & Commander** <br> Gestión de Datos, ETLs y Supervisión. | `Python` `PostgreSQL` `Data Engineering` | [Ver Detalle](projects/nostromo.md) |
-| **Orchestrator** | ⚙️ **Backend & Truth** <br> Lógica de negocio, API y Seguridad. | `Node.js` `Express` `TypeScript` | [Ver Detalle](projects/orchestrator.md) |
-| **Sevastopol** | 🎨 **Frontend & UX** <br> Arquitectura de Islas y Diseño Atómico. | `Astro` `SolidJS` `Tailwind` | [Ver Detalle](projects/sevastopol.md) |
-| **Jean d'Arc** | 📚 **Documentation** <br> Fuente de verdad y guías técnicas. | `Astro Starlight` `Mermaid` | [Ver Detalle](projects/jean-d-arc.md) |
+| Proyecto         | Rol                                                                          | Tech Stack                                 | Link                                    |
+| :--------------- | :--------------------------------------------------------------------------- | :----------------------------------------- | :-------------------------------------- |
+| **Nostromo**     | 🧠 **Core & Commander** <br> Gestión de Datos, ETLs y Supervisión.           | `Python` `PostgreSQL` `Data Engineering`   | [Ver Detalle](projects/nostromo.md)     |
+| **Orchestrator** | ⚙️ **Backend & Truth** <br> Lógica de negocio, API y Seguridad.              | `Node.js` `Express` `TypeScript`           | [Ver Detalle](projects/orchestrator.md) |
+| **Sevastopol**   | 🎨 **Frontend & UX** <br> Arquitectura de Islas y Diseño Atómico.            | `Astro` `SolidJS` `Tailwind`               | [Ver Detalle](projects/sevastopol.md)   |
+| **Jean d'Arc**   | 📚 **Documentation** <br> Fuente de verdad y guías técnicas.                 | `Astro Starlight` `Mermaid`                | [Ver Detalle](projects/jean-d-arc.md)   |
 
 ---
 
