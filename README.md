@@ -38,13 +38,13 @@ Actualmente, construyo **Nostromo**, un **Sistema Contable de última generació
 
 ---
 
-## 📈 GitHub Stats
+## �️ System Status
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ChrisTkm&show_icons=true&theme=holi&hide_border=true&locale=es)
+![System Status](assets/status_card.svg)
 
 ---
 
-## 📬 Contacto
+## �📬 Contacto
 
 - 📧 [chris@albornoz.studio](mailto:chris@albornoz.studio)
 - 📍 Santiago, Chile 🇨🇱

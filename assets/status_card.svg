@@ -1,0 +1,77 @@
+<svg width="840" height="200" viewBox="0 0 840 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .bg { fill: #0D1117; }
+    .text { font-family: 'Consolas', 'Monaco', 'Andale Mono', 'Ubuntu Mono', monospace; fill: #4ADE80; opacity: 0.9; }
+    .text-dim { font-family: 'Consolas', 'Monaco', 'Andale Mono', 'Ubuntu Mono', monospace; fill: #4ADE80; opacity: 0.5; }
+    .text-alert { font-family: 'Consolas', 'Monaco', 'Andale Mono', 'Ubuntu Mono', monospace; fill: #F43F5E; }
+    .border { stroke: #1F2937; stroke-width: 1; }
+    .accent { stroke: #4ADE80; stroke-width: 1; }
+    
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+    .blinking { animation: blink 2s infinite; }
+    
+    @keyframes scan {
+      0% { transform: translateY(0); opacity: 0.5; }
+      100% { transform: translateY(200px); opacity: 0; }
+    }
+    .scanline { fill: url(#grad); animation: scan 4s linear infinite; }
+  </style>
+
+  <!-- Background and Base Border -->
+  <rect width="840" height="200" rx="6" class="bg"/>
+  <rect x="10" y="10" width="820" height="180" rx="4" class="border" fill="none"/>
+  
+  <!-- Header -->
+  <text x="30" y="40" font-size="14" class="text" font-weight="bold">/// ALBORNOZ ACCOUNTING SYSTEM // NOSTROMO TERMINAL</text>
+  <line x1="10" y1="55" x2="830" y2="55" class="border"/>
+  
+  <!-- System Status Module -->
+  <rect x="30" y="75" width="10" height="10" fill="#4ADE80" class="blinking"/>
+  <text x="50" y="85" font-size="14" class="text">SYSTEM STATUS: <tspan font-weight="bold">ONLINE</tspan></text>
+  <text x="50" y="105" font-size="12" class="text-dim">UPTIME: 99.98%</text>
+  <text x="50" y="125" font-size="12" class="text-dim">SECURITY: ENFORCED</text>
+  
+  <!-- Agents Module -->
+  <line x1="300" y1="55" x2="300" y2="190" class="border"/>
+  <text x="320" y="85" font-size="12" class="text-dim">ACTIVE_AGENTS</text>
+  
+  <text x="320" y="110" font-size="14" class="text">> NOSTROMO <tspan class="text-dim">[CORE]</tspan></text>
+  <text x="320" y="130" font-size="14" class="text">> ORCHESTRATOR <tspan class="text-dim">[BACK]</tspan></text>
+  <text x="320" y="150" font-size="14" class="text">> SEVASTOPOL <tspan class="text-dim">[FRONT]</tspan></text>
+  <text x="320" y="170" font-size="14" class="text">> JEAN D'ARC <tspan class="text-dim">[DOCS]</tspan></text>
+
+  <!-- Skills Module -->
+  <line x1="580" y1="55" x2="580" y2="190" class="border"/>
+  <text x="600" y="85" font-size="12" class="text-dim">TECH_STACK_METRICS</text>
+  
+  <!-- Simple bars for skills -->
+  <text x="600" y="110" font-size="12" class="text">PYTHON</text>
+  <rect x="680" y="102" width="100" height="8" fill="#1F2937"/>
+  <rect x="680" y="102" width="90" height="8" fill="#4ADE80"/>
+  
+  <text x="600" y="130" font-size="12" class="text">TYPESCRIPT</text>
+  <rect x="680" y="122" width="100" height="8" fill="#1F2937"/>
+  <rect x="680" y="122" width="85" height="8" fill="#4ADE80"/>
+  
+  <text x="600" y="150" font-size="12" class="text">SQL</text>
+  <rect x="680" y="142" width="100" height="8" fill="#1F2937"/>
+  <rect x="680" y="142" width="95" height="8" fill="#4ADE80"/>
+
+  <!-- Decorative Corner Accents -->
+  <path d="M10 40 V10 H40" class="accent" fill="none"/>
+  <path d="M830 160 V190 H800" class="accent" fill="none"/>
+  
+  <!-- Scanline Gradient -->
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4ADE80" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#4ADE80" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#4ADE80" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="840" height="5" class="scanline"/>
+
+</svg>
