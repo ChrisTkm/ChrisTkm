@@ -1,9 +1,9 @@
 <svg width="840" height="200" viewBox="0 0 840 200" fill="none" xmlns="http://www.w3.org/2000/svg">
   <style>
     .bg { fill: #0D1117; }
-    .text { font-family: 'Consolas', 'Monaco', 'Andale Mono', 'Ubuntu Mono', monospace; fill: #4ADE80; opacity: 0.9; }
-    .text-dim { font-family: 'Consolas', 'Monaco', 'Andale Mono', 'Ubuntu Mono', monospace; fill: #4ADE80; opacity: 0.5; }
-    .text-alert { font-family: 'Consolas', 'Monaco', 'Andale Mono', 'Ubuntu Mono', monospace; fill: #F43F5E; }
+    .text { font-family: 'JetBrains Mono', 'Monaco', 'Andale Mono', 'Ubuntu Mono', monospace; fill: #4ADE80; opacity: 0.9; }
+    .text-dim { font-family: 'JetBrains Mono', 'Monaco', 'Andale Mono', 'Ubuntu Mono', monospace; fill: #4ADE80; opacity: 0.5; }
+    .text-alert { font-family: 'JetBrains Mono', 'Monaco', 'Andale Mono', 'Ubuntu Mono', monospace; fill: #F43F5E; }
     .border { stroke: #1F2937; stroke-width: 1; }
     .accent { stroke: #4ADE80; stroke-width: 1; }
     

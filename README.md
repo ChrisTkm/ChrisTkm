@@ -38,13 +38,13 @@ Actualmente, construyo **Nostromo**, un **Sistema Contable de última generació
 
 ---
 
-## �️ System Status
+## 📊 System Status
 
 ![System Status](assets/status_card.svg)
 
 ---
 
-## �📬 Contacto
+## 📬 Contacto
 
 - 📧 [chris@albornoz.studio](mailto:chris@albornoz.studio)
 - 📍 Santiago, Chile 🇨🇱
