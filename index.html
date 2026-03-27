@@ -3,53 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carta de Presentación - Christian Albornoz</title>
+    <title>Christian Albornoz | Software, Data & Accounting Systems</title>
     <style>
+        :root {
+            --bg: #f4f1ea;
+            --ink: #16212b;
+            --muted: #4f5d6b;
+            --line: #d7d0c4;
+            --panel: #fffdf8;
+            --accent: #0c6d72;
+            --accent-2: #bb5a2c;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 40px;
-            line-height: 1.5;
-            background-color: #f9f9f9;
-            color: #333;
+            margin: 0;
+            font-family: Georgia, "Times New Roman", serif;
+            background:
+                radial-gradient(circle at top right, rgba(187, 90, 44, 0.14), transparent 32%),
+                linear-gradient(180deg, #f8f4ec 0%, var(--bg) 100%);
+            color: var(--ink);
         }
+
+        main {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 56px 24px 72px;
+        }
+
+        .hero {
+            display: grid;
+            gap: 20px;
+            margin-bottom: 36px;
+        }
+
         h1 {
-            color: #005f87;
+            margin: 0;
+            font-size: clamp(2.5rem, 7vw, 4.8rem);
+            line-height: 0.95;
+            letter-spacing: -0.04em;
         }
-        p {
-            margin-bottom: 15px;
+
+        .lede {
+            max-width: 720px;
+            font-size: 1.15rem;
+            line-height: 1.75;
+            color: var(--muted);
         }
+
+        .panel {
+            background: rgba(255, 253, 248, 0.88);
+            border: 1px solid var(--line);
+            border-radius: 24px;
+            padding: 24px;
+            backdrop-filter: blur(8px);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin: 28px 0 36px;
+        }
+
+        .card h2 {
+            margin: 0 0 10px;
+            font-size: 1.2rem;
+        }
+
+        .card p {
+            margin: 0 0 14px;
+            color: var(--muted);
+            line-height: 1.6;
+        }
+
         a {
-            color: #005f87;
+            color: var(--accent);
             text-decoration: none;
         }
-        .highlight {
-            font-weight: bold;
-            color: #222;
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px 20px;
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        .cta {
+            display: inline-block;
+            padding: 12px 18px;
+            border-radius: 999px;
+            background: var(--accent);
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .cta:hover {
+            background: var(--accent-2);
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
+<main>
+    <section class="hero">
+        <p>Christian Albornoz</p>
+        <h1>Software para contabilidad, datos y operación real.</h1>
+        <p class="lede">
+            Construyo sistemas donde el dominio contable y la ingeniería de software tienen que convivir con rigor.
+            Este sitio resume públicamente el ecosistema de proyectos privados en los que trabajo: backend, frontend,
+            procesamiento de datos y documentación técnica.
+        </p>
+        <div>
+            <a class="cta" href="./README.md">Ver README principal</a>
+        </div>
+    </section>
 
-<h1>Carta de Presentación</h1>
+    <section class="grid">
+        <article class="panel card">
+            <h2>Nostromo</h2>
+            <p>Core de datos, ETL y automatización batch para el sistema contable.</p>
+            <a href="./projects/nostromo.md">Abrir documento público</a>
+        </article>
+        <article class="panel card">
+            <h2>Orchestrator</h2>
+            <p>Backend de negocio, API, validación y seguridad multi-tenant.</p>
+            <a href="./projects/orchestrator.md">Abrir documento público</a>
+        </article>
+        <article class="panel card">
+            <h2>Sevastopol</h2>
+            <p>Frontend con Astro, islas interactivas y patrón BFF.</p>
+            <a href="./projects/sevastopol.md">Abrir documento público</a>
+        </article>
+        <article class="panel card">
+            <h2>Jean d'Arc</h2>
+            <p>Documentación, arquitectura y transferencia de conocimiento.</p>
+            <a href="./projects/jean-d-arc.md">Abrir documento público</a>
+        </article>
+    </section>
 
-<p>Estimado/a reclutador/a:</p>
-
-<p>Soy <span class="highlight">Christian Albornoz</span>, un profesional apasionado por la programación y el desarrollo de aplicaciones web, con fuertes conocimientos en Python, JavaScript, HTML, CSS, SQL y automatización de procesos.</p>
-
-<p>Durante los últimos años, he potenciado mis habilidades técnicas a través de proyectos personales y profesionales, especializándome en la creación de aplicaciones dinámicas y en la automatización eficiente de tareas repetitivas, integrando bases de datos relacionales y no relacionales, y mejorando continuamente mis competencias en frameworks modernos como Django, React y TypeScript.</p>
-
-<p>Aunque mi carrera se ha desarrollado principalmente en el ámbito financiero y contable como Analista Senior en inversiones, deseo dar un giro hacia la informática, especialmente enfocado en desarrollo frontend/backend y ciberseguridad, campos donde me siento altamente motivado y en constante aprendizaje.</p>
-
-<p>Estoy seguro de que mi combinación de experiencia financiera, contable, y mi pasión por la tecnología puede aportar una perspectiva única y valiosa a tu equipo.</p>
-
-<p>Agradezco profundamente tu tiempo y estoy entusiasmado por conversar sobre cómo puedo contribuir eficazmente a tus proyectos.</p>
-
-<p>Atentamente,</p>
-<p><strong>Christian Albornoz</strong><br>
-<a href="mailto:chris.albornozm@outlook.com">chris.albornozm@outlook.com</a><br>
-+56 9 75021615<br>
-<a href="https://github.com/[tu-usuario]">Perfil GitHub</a>
-</p>
-
+    <section class="panel">
+        <p>
+            La información publicada aquí está saneada a propósito: no incluye secretos, datos de clientes,
+            configuraciones internas ni detalles sensibles de infraestructura.
+        </p>
+        <div class="meta">
+            <span>Santiago, Chile</span>
+            <a href="mailto:chris@albornoz.studio">chris@albornoz.studio</a>
+            <a href="https://github.com/ChrisTkm">github.com/ChrisTkm</a>
+        </div>
+    </section>
+</main>
 </body>
 </html>

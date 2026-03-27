@@ -1,100 +1,106 @@
 ![Orchestrator Banner](assets/orchestrator/banner.svg)
 
-# ⚙️ Orchestrator Backend
+# Orchestrator
 
-**"La Fuente de Verdad" del Ecosistema Contable.**
+Backend de negocio, API y seguridad del ecosistema contable.
 
 > [!NOTE]
-> Este proyecto es **Privado**. Esta página es una vitrina de su arquitectura y propósito.
+> Este documento es público y sanitizado. Describe el enfoque arquitectónico y las responsabilidades del backend sin exponer endpoints internos sensibles, credenciales ni detalles operativos reservados.
 
 [![Node.js](https://img.shields.io/badge/Runtime-Node.js%2020+-339933?style=flat-square&logo=node.js&logoColor=white)](https://nodejs.org/)
 [![TypeScript](https://img.shields.io/badge/Lang-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Express](https://img.shields.io/badge/Framework-Express%205-000000?style=flat-square&logo=express&logoColor=white)](https://expressjs.com/)
 [![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
-[![Agent](https://img.shields.io/badge/Agent-Orchestrator-black?style=flat-square&logo=robot)](#)
 
----
+## Qué resuelve
 
-**Orchestrator** es el núcleo backend del Ecosistema Contable, responsable de toda la **lógica de negocio**, **validación**, **seguridad** y **persistencia de datos**.
+Orchestrator concentra la lógica de negocio que no debe quedar dispersa entre pantallas, scripts o decisiones ad hoc. Es la capa que valida, autoriza, compone reglas y protege la consistencia transaccional del sistema.
 
-Actúa como el "árbitro central" que protege la integridad de los datos y asegura que el Frontend (Sevastopol) solo se preocupe de la UI.
+Su rol es sencillo de definir y difícil de reemplazar: actuar como fuente de verdad operacional.
 
-## 🤖 Agente Orchestrator
+## Responsabilidades
 
-> *"Arquitectura Backend, Seguridad y Lógica de Negocio"*
+- Exponer API para el frontend y otros consumidores controlados.
+- Validar entradas antes de que toquen la lógica de negocio.
+- Resolver contexto de tenant y permisos de usuario.
+- Encapsular reglas de negocio y cálculos críticos.
+- Coordinar persistencia, lectura y escritura hacia PostgreSQL.
+- Proveer una base comprobable mediante pruebas y convenciones claras.
 
-Este repositorio es vigilado por el **Agente Orchestrator**, encargado de mantener la integridad arquitectónica del backend.
+## Modelo arquitectónico
 
-**Responsabilidades:**
+El backend sigue una estrategia híbrida:
 
-- **Arquitecto Backend**: Estructura sobre velocidad, lógica de negocio encapsulada.
-- **Auditor de Seguridad**: Validación de inputs, RBAC, protección de endpoints.
-- **Ejecutor de Pruebas**: Tests E2E y unitarios para flujos críticos.
+- la lógica y las escrituras viven en servicios TypeScript;
+- las lecturas pesadas y reportes pueden apoyarse en SQL y vistas optimizadas;
+- la seguridad y el contexto de acceso atraviesan el request desde el borde.
 
----
-
-## 🏗️ Arquitectura: Hybrid Core
-
-El backend implementa una arquitectura **Pragmatic Hybrid 2025**:
-
-| Dominio            | Responsabilidad                                       | Ubicación                |
-| :---------------- | :---------------------------------------------------- | :----------------------- |
-| **Writes & Logic** | Cálculos complejos (nóminas, impuestos), validaciones | TypeScript (Services)    |
-| **Reads & Reports** | Listados masivos, dashboards                          | PostgreSQL (Smart Views) |
-
-### Flujo de Datos
-
-```
-Sevastopol → /api/* → Orchestrator → PostgreSQL (Multi-Tenant)
-                ↓
-        Auth Middleware → RBAC → Service Layer → Repository → DB
+```text
+Cliente / Frontend
+   -> middleware de autenticación
+   -> autorización por rol
+   -> validación de input
+   -> servicio de dominio
+   -> repositorio / acceso a datos
+   -> PostgreSQL
 ```
 
-## 🛠️ Stack Tecnológico
-
-| Capa              | Tecnología                                                                       | Uso                         |
-| :---------------- | :------------------------------------------------------------------------------- | :-------------------------- |
-| **Runtime**       | [Node.js 20+](https://nodejs.org/)                                               | Motor de ejecución          |
-| **Framework**     | [Express 5.x](https://expressjs.com/)                                            | HTTP Server y Routing       |
-| **Lenguaje**      | [TypeScript](https://www.typescriptlang.org/)                                    | Tipado estricto             |
-| **Base de Datos** | [PostgreSQL](https://www.postgresql.org/)                                      | Multi-tenant via Pools      |
-| **Auth**          | JWT + Session Cookies                                                            | Seguridad basada en `sid`   |
-| **Validación**    | [express-validator](https://express-validator.github.io/)                        | Sanitización de inputs      |
-| **Testing**       | [Jest](https://jestjs.io/) + [Supertest](https://github.com/ladjs/supertest)     | Unit y E2E                  |
-
-## 📂 Estructura del Proyecto
+## Módulos esperables
 
 ```text
 src/
-├── app.ts                    # Express app factory
-├── server.ts                 # HTTP server bootstrap
-├── lib/
-│   ├── db.ts                 # Pool management (central, common, tenant)
-│   ├── rbac.ts               # Role-Based Access Control
-│   └── tenantResolver.ts     # Tenant context resolution
-├── middleware/
-│   └── auth.ts               # authenticateToken + authorizeRoute
-├── domain/                   # Business Logic Layer
-│   ├── auth/                 # Authentication services
-│   ├── command/              # Tenant & User management
-│   └── remuneraciones/       # Payroll domain
-└── routes/
-    ├── command/              # nostromo_command (Admin)
-    ├── common/               # nostromo_common (Params)
-    ├── operations/           # operaciones_sii (Sales)
-    └── remuneraciones/       # Payroll endpoints
+app.ts                app factory y composición
+server.ts             bootstrap del servidor
+lib/                  infraestructura transversal
+middleware/           auth, guards y validaciones comunes
+domain/               reglas de negocio por dominio
+routes/               superficie HTTP y separación por áreas
 ```
 
-## 🔐 Seguridad
+Aunque la estructura interna evolucione, la frontera conceptual es estable: HTTP en el borde, negocio en el dominio, persistencia detrás de una capa explícita.
 
-- **Autenticación**: Session-based JWT en cookie `httpOnly` (`sid`)
-- **Autorización**: RBAC con roles `SUPER_ADMIN`, `ADMIN`, `USER`
-- **Validación**: Todos los inputs validados con express-validator
-- **Headers**: Helmet para protección de headers HTTP
-- **Rate Limiting**: Límites por rol de usuario
+## Seguridad
 
----
+La seguridad no es una capa decorativa. Forma parte del flujo normal del backend:
 
-<div align="center">
-  <sub>Parte del ecosistema <b>Albornoz Accounting System</b>.</sub>
-</div>
+- autenticación basada en sesión o token;
+- autorización con roles y rutas protegidas;
+- validación y sanitización de inputs;
+- hardening HTTP;
+- separación de contexto por tenant.
+
+## Principios de implementación
+
+- El frontend no decide reglas contables.
+- Los cálculos críticos no se duplican en múltiples capas.
+- Los errores deben ser trazables y operar con contratos consistentes.
+- La estructura del código debe favorecer mantenimiento antes que velocidad aparente.
+
+## Testing y confiabilidad
+
+Orchestrator está pensado para sostener pruebas en más de un nivel:
+
+- unitarias para servicios y utilidades;
+- integración para rutas y persistencia;
+- end-to-end para flujos críticos expuestos al usuario.
+
+No todo se publica aquí, pero el criterio es claro: la capa central del negocio debe ser verificable.
+
+## Límites públicos
+
+Esta página omite deliberadamente:
+
+- nombres reales de tenants o clientes;
+- contratos internos completos de API;
+- configuración de secretos, sesiones o despliegue;
+- detalles finos de rate limiting, observabilidad o infraestructura.
+
+## Relación con otros proyectos
+
+- `Sevastopol` consume esta capa a través de un BFF y rutas controladas.
+- `Nostromo` complementa el backend con procesos batch y trabajo de datos.
+- `Jean d'Arc` concentra la documentación y las convenciones que sostienen el sistema.
+
+## Estado público del proyecto
+
+Orchestrator representa la disciplina del sistema: una capa intermedia que permite crecer sin volver caótico el dominio contable ni filtrar lógica sensible hacia la interfaz.

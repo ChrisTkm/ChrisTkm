@@ -1,31 +1,34 @@
-# Hola, soy Christian Albornoz ✨
+# Christian Albornoz
 
 ![header](header.svg)
 
----
+Contador Auditor reconvertido en ingeniero de software. Trabajo en productos donde la arquitectura y el dominio contable tienen que convivir sin fricción: datos confiables, reglas de negocio explícitas y una interfaz que no esconda complejidad detrás de improvisación.
 
-## 👋 Sobre mí
+Este repositorio funciona como vitrina pública de mi trabajo. Los repositorios operativos del ecosistema son privados, así que aquí concentro una versión publicable de su contexto, sus decisiones arquitectónicas y el rol que cumple cada pieza.
 
-Soy **Contador Auditor transformado en Ingeniero de Software**.
-Combino **+11 años de experiencia financiera** con arquitectura de software moderna para crear herramientas que entienden el negocio.
-Diseño sistemas que resuelven problemas contables reales, priorizando la solidez del dato y la experiencia del usuario.
+## Ecosistema
 
----
+| Proyecto | Rol | Stack principal | Documento público |
+| :--- | :--- | :--- | :--- |
+| **Nostromo** | Core de datos, ETL y automatización | `Python` `PostgreSQL` `Data Engineering` | [projects/nostromo.md](projects/nostromo.md) |
+| **Orchestrator** | Backend de negocio, API y seguridad | `Node.js` `Express` `TypeScript` | [projects/orchestrator.md](projects/orchestrator.md) |
+| **Sevastopol** | Frontend, BFF y experiencia de usuario | `Astro` `SolidJS` `Tailwind` | [projects/sevastopol.md](projects/sevastopol.md) |
+| **Jean d'Arc** | Documentación, arquitectura y guías operativas | `Astro Starlight` `Mermaid` | [projects/jean-d-arc.md](projects/jean-d-arc.md) |
 
-## 🚀 Ecosistema Contable (Nostromo)
+## Qué encontrarás aquí
 
-Actualmente, construyo **Nostromo**, un **Sistema Contable de última generación** diseñado con arquitectura de micro-agentes y separación estricta de responsabilidades.
+- Un resumen público por proyecto con su propósito, límites y arquitectura.
+- Explicaciones suficientes para entender cómo se integran entre sí.
+- Información sanitizada: sin credenciales, sin esquemas sensibles, sin endpoints internos ni detalles de despliegue reservados.
 
-| Proyecto | Rol | Tech Stack | Link
-| :--- | :--- | :--- | :---
-| **Nostromo** | 🧠 **Core & Commander** </br> Gestión de Datos, ETLs y Supervisión. | `Python` `PostgreSQL` `Data Engineering` | [Ver Detalle](projects/nostromo.md)
-| **Orchestrator** | ⚙️ **Backend & Truth** </br> Lógica de negocio, API y Seguridad. | `Node.js` `Express` `TypeScript` | [Ver Detalle](projects/orchestrator.md)
-| **Sevastopol** | 🎨 **Frontend & UX** </br> Arquitectura de Islas y Diseño Atómico. | `Astro` `SolidJS` `Tailwind` | [Ver Detalle](projects/sevastopol.md)
-| **Jean d'Arc** | 📚 **Documentation** </br> Fuente de verdad y guías técnicas. | `Astro Starlight` `Mermaid` | [Ver Detalle](projects/jean-d-arc.md)
+## Principios de trabajo
 
----
+- El dato contable no se improvisa: la trazabilidad y la validación son parte del diseño.
+- El frontend no absorbe lógica de negocio que pertenece al backend.
+- La documentación no es un accesorio; es parte del sistema.
+- La automatización tiene que reducir errores operativos, no solo ahorrar clicks.
 
-## 🛠️ Tech Stack
+## Stack
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
@@ -36,15 +39,11 @@ Actualmente, construyo **Nostromo**, un **Sistema Contable de última generació
 ![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 
----
-
-## 📊 System Status
+## Estado del sistema
 
 ![System Status](assets/status_card.svg)
 
----
+## Contacto
 
-## 📬 Contacto
-
-- 📧 [chris@albornoz.studio](mailto:chris@albornoz.studio)
-- 📍 Santiago, Chile 🇨🇱
+- Email: [chris@albornoz.studio](mailto:chris@albornoz.studio)
+- Ubicación: Santiago, Chile

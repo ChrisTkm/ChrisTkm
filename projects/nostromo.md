@@ -1,88 +1,104 @@
 ![Nostromo Banner](assets/nostromo/banner.svg)
 
-# 🚀 Nostromo Core
+# Nostromo
 
-**"El Corazón Operativo" del Ecosistema Contable.**
+Core de datos, automatización y procesamiento batch del ecosistema contable.
 
 > [!NOTE]
-> Este proyecto es **Privado**. Esta página es una vitrina de su arquitectura y propósito.
+> Este documento es una versión pública y sanitizada del proyecto. Resume la arquitectura y el propósito del sistema sin exponer credenciales, esquemas internos completos ni detalles operativos sensibles.
 
 [![Python](https://img.shields.io/badge/Python-3.11+-3776ab?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15+-4169e1?style=flat-square&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
-[![Agent](https://img.shields.io/badge/Agent-Nostromo-orange?style=flat-square&logo=robot)](#)
+[![Data Engineering](https://img.shields.io/badge/Focus-Data%20Engineering-orange?style=flat-square)](#)
 
----
+## Qué resuelve
 
-**Nostromo** es el backend fundacional y núcleo de procesamiento del **Albornoz Accounting System**.
+Nostromo existe para absorber el trabajo pesado del sistema contable: ingesta de datos, normalización, procesos programados, estructura de base de datos y automatizaciones que no deberían depender de la interfaz ni del backend transaccional.
 
-A diferencia del **Orchestrator** (Node.js) que maneja la lógica de negocio online, Nostromo se especializa en el trabajo pesado: **procesamiento batch, ETLs masivos, gestión estructural de base de datos y memoria corporativa**.
+Dentro del ecosistema, su responsabilidad es preparar y custodiar información para que otras capas trabajen sobre una base consistente.
 
-## 🤖 Agente Nostromo
+## Rol en la arquitectura
 
-> *"Guardián Multi-Tenant, Ingeniero de Datos & Core System"*
+Mientras `Orchestrator` concentra la lógica online y `Sevastopol` la experiencia de usuario, Nostromo opera como plano de fondo:
 
-Este repositorio es el dominio del **Agente Nostromo**, una inteligencia especializada encargada de la integridad de datos, procesos de fondo y la estructura de conocimiento.
+- ejecuta pipelines ETL;
+- procesa cargas masivas desde fuentes externas;
+- organiza utilidades técnicas y scripts de mantenimiento;
+- sostiene flujos que requieren trazabilidad y repetibilidad;
+- sirve como punto natural para tareas de soporte de datos y operación.
 
-**Responsabilidades:**
+## Capacidades principales
 
-- **🛡️ Guardián de Datos**: Administra y protege la estructura de la base de datos PostgreSQL (`db/`), gestionando migraciones y esquemas multi-tenant.
-- **🔄 ETL Operator**: Ejecuta pipelines de extracción y carga de datos masivos (SII, Previred, Bancos) a través del `accounting_system`.
-- **🧠 Knowledge Base Manager**: Mantiene la **Matriz de Habilidades** y las **Instrucciones del Agente**.
-- **🛠️ Tooling & Scripts**: Provee utilidades avanzadas y scripts de mantenimiento.
+- Carga y transformación de documentos tributarios y archivos contables.
+- Automatización de procesos periódicos y tareas operativas.
+- Soporte para estructuras multi-tenant sobre PostgreSQL.
+- Scripts de apoyo para mantenimiento, depuración y labores internas.
+- Organización de conocimiento técnico y tooling asociado al ecosistema.
 
----
-
-## 📂 Estructura del Proyecto
+## Vista de arquitectura
 
 ```text
-Nostromo/
-├── accounting_system/      # ⚙️ Motores ETL y Loaders (SII, Previred)
-├── db/                     # 🗄️ Definiciones de Base de Datos (PostgreSQL)
-│   ├── legacy_v1/          # 📜 Archivos históricos y templates antiguos
-│   ├── playground/         # 🧪 Scripts de prueba y experimentación
-│   └── helpers/            # 🛠️ Scripts SQL de utilidad
-├── skills/                 # 🧠 Matriz de Conocimiento y Habilidades de Agentes
-├── auth/                   # 🔐 Conectores de Base de Datos y Utilidades de Conexión
-├── scripts/                # 📜 Scripts de Mantenimiento y Automatización
-├── docs/                   # 📘 Documentación Técnica Profunda
-├── arkana/                 # 🧪 Laboratorio y Herramientas Experimentales
-├── utils/                  # 🛠️ Utilidades compartidas y Helpers
-└── assets/                 # 🎨 Recursos Gráficos y Herramientas (Antigravity)
+Fuentes externas
+   -> validación y parsing
+   -> normalización
+   -> carga controlada
+   -> persistencia / utilidades de soporte
+   -> consumo por backend y operación interna
 ```
 
-## ⚙️ Componentes Principales
+Este proyecto no compite con el backend HTTP. Su valor está en la robustez del procesamiento, no en servir vistas o endpoints.
 
-### 1. Accounting System (ETL)
+## Áreas del proyecto
 
-El motor de ingesta de datos. Contiene scripts Python especializados para:
+```text
+accounting_system/   motores ETL y loaders especializados
+db/                  utilidades SQL, apoyo de desarrollo y material histórico
+auth/                conectividad y helpers de acceso
+scripts/             automatización operativa
+skills/              conocimiento y soporte para agentes/herramientas
+docs/                documentación técnica interna
+utils/               helpers compartidos
+assets/              recursos gráficos y utilitarios
+```
 
-- **SII Loader**: Carga masiva y procesamiento de documentos tributarios (RCV).
-- **Previred**: Procesamiento automatizado de planillas de cotizaciones.
-- **Banco Central**: Obtención y normalización de indicadores económicos.
+## Flujos típicos
 
-### 2. Database (DB)
+### Ingesta contable
 
-**Fuente de Verdad Externa**: Los esquemas productivos ("Modernos") se mantienen en el repositorio hermano `Accounting/mother` (carpeta `accounting_template`).
-Nostromo actúa como el **motor de ejecución** y orquestación para estos esquemas.
+1. Un origen externo entrega archivos o registros.
+2. Nostromo valida formato y consistencia básica.
+3. El dato se normaliza para hacerlo utilizable aguas abajo.
+4. El resultado se persiste o se deja listo para consumo del backend.
 
-La carpeta `db/` interna de este repositorio contiene herramientas de desarrollo (`playground`), scripts de utilidad (`helpers`) y archivos históricos (`legacy_v1`).
+### Operación y mantenimiento
 
-### 3. Skill Matrix
+1. Un proceso interno necesita revisión o apoyo técnico.
+2. Nostromo ejecuta scripts o tareas programadas.
+3. El sistema deja trazas, resultados o artefactos reproducibles.
 
-El centro de conocimiento compartido. Aquí se definen las capacidades de cada agente (**Jean d'Arc**, **Sevastopol**, **Orchestrator**) y se documenta cómo deben interactuar entre sí.
+## Decisiones de diseño
 
----
+- Python como lenguaje principal para procesos ETL y automatización.
+- PostgreSQL como soporte natural para integridad y trazabilidad de datos.
+- Separación entre procesamiento batch y lógica de negocio online.
+- Herramientas y scripts versionados para reducir trabajo manual repetitivo.
 
-## 🔐 Seguridad
+## Límites públicos
 
-Nostromo opera como un componente crítico de infraestructura.
+Por seguridad y privacidad, esta página no publica:
 
-- **Credenciales**: Gestionadas vía variables de entorno (`.env`) y `EmpresaConfigManager`.
-- **Accesos**: Limitados a roles de administración y servicios backend.
-- **Logging**: Trazabilidad completa en `logs/`.
+- credenciales o variables de entorno;
+- esquemas productivos completos;
+- estructura exacta de tenants y clientes;
+- detalles de despliegue, jobs programados o topología interna;
+- contratos sensibles con integraciones externas.
 
----
+## Relación con el resto del ecosistema
 
-<div align="center">
-  <sub>Parte del ecosistema <b>Albornoz Accounting System</b>.</sub>
-</div>
+- `Orchestrator` consume y gobierna negocio sobre datos ya estructurados.
+- `Sevastopol` nunca se conecta directamente a esta capa.
+- `Jean d'Arc` documenta decisiones, procesos y convenciones relacionadas.
+
+## Estado público del proyecto
+
+Nostromo representa la parte menos visible del sistema, pero también una de las más críticas. Su valor no está en la UI, sino en la confiabilidad con que transforma procesos contables complejos en flujos repetibles y auditables.
