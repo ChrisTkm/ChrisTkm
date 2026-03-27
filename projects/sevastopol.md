@@ -42,6 +42,8 @@ Usuario
 
 Ese patrón permite mantener cookies, contexto y validaciones sin exponer directamente la superficie interna del backend al navegador.
 
+Ejemplo público representativo: una persona usuaria revisa un proceso contable con validaciones, filtros y estados intermedios. La interfaz resuelve interacción y feedback, pero delega permisos, reglas y persistencia al backend a través del BFF.
+
 ## Sistema de diseño
 
 Sevastopol sigue una jerarquía compatible con Atomic Design:
@@ -53,15 +55,12 @@ Sevastopol sigue una jerarquía compatible con Atomic Design:
 
 La separación no es estética solamente. Sirve para evitar que la UI se convierta en un contenedor caótico de lógica dispersa.
 
-## Áreas del proyecto
+## Capas del proyecto
 
-```text
-src/
-components/           sistema visual reutilizable
-islands/              componentes interactivos
-pages/                rutas y endpoints del frontend
-layouts/              estructura base de pantallas
-```
+- sistema visual reutilizable para consistencia entre pantallas;
+- islas interactivas para formularios, filtros y estados locales;
+- rutas y endpoints del frontend para páginas y funciones BFF;
+- layouts y composición para sostener navegación y estructura.
 
 ## Experiencia y rendimiento
 

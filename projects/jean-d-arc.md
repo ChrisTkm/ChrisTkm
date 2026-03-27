@@ -69,6 +69,8 @@ La estructura exacta puede cambiar con el tiempo, pero la intención se mantiene
 2. La documentación concentra decisiones previas y límites relevantes.
 3. El equipo reduce retrabajo y contradicciones entre repositorios.
 
+Ejemplo público representativo: cuando una integración cambia o aparece una regla operativa nueva, Jean d'Arc permite registrar el criterio, el alcance y las dependencias afectadas sin dejar esa información atrapada en mensajes o reuniones.
+
 ## Qué no se publica aquí
 
 Por diseño, esta vitrina pública omite:

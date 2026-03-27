@@ -21,6 +21,13 @@ Este repositorio funciona como vitrina pública de mi trabajo. Los repositorios 
 - Explicaciones suficientes para entender cómo se integran entre sí.
 - Información sanitizada: sin credenciales, sin esquemas sensibles, sin endpoints internos ni detalles de despliegue reservados.
 
+## Qué problemas ataca este ecosistema
+
+- Reducir trabajo manual en cargas contables, documentos tributarios y procesos repetitivos.
+- Concentrar reglas de negocio, permisos y contexto multi-tenant en una capa verificable.
+- Entregar una interfaz operable para tareas complejas sin exponer complejidad interna al navegador.
+- Mantener documentación útil para onboarding, operación y evolución técnica aunque los repositorios no sean públicos.
+
 ## Principios de trabajo
 
 - El dato contable no se improvisa: la trazabilidad y la validación son parte del diseño.

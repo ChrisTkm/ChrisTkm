@@ -48,17 +48,14 @@ Fuentes externas
 
 Este proyecto no compite con el backend HTTP. Su valor está en la robustez del procesamiento, no en servir vistas o endpoints.
 
-## Áreas del proyecto
+## Áreas funcionales del proyecto
 
 ```text
-accounting_system/   motores ETL y loaders especializados
-db/                  utilidades SQL, apoyo de desarrollo y material histórico
-auth/                conectividad y helpers de acceso
-scripts/             automatización operativa
-skills/              conocimiento y soporte para agentes/herramientas
-docs/                documentación técnica interna
-utils/               helpers compartidos
-assets/              recursos gráficos y utilitarios
+pipelines ETL        cargas, parsing y normalización
+persistencia         utilidades y soporte para base de datos
+automatización       scripts programados y tareas operativas
+tooling interno      helpers compartidos para soporte y mantenimiento
+documentación        contexto técnico y guías de operación
 ```
 
 ## Flujos típicos
@@ -69,6 +66,8 @@ assets/              recursos gráficos y utilitarios
 2. Nostromo valida formato y consistencia básica.
 3. El dato se normaliza para hacerlo utilizable aguas abajo.
 4. El resultado se persiste o se deja listo para consumo del backend.
+
+Ejemplo público representativo: una carga masiva de documentos tributarios llega con formatos inconsistentes. Nostromo unifica estructura, descarta entradas inválidas y deja un conjunto procesable para que la operación no dependa de correcciones manuales caso a caso.
 
 ### Operación y mantenimiento
 

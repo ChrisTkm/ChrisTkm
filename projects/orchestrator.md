@@ -45,19 +45,18 @@ Cliente / Frontend
    -> PostgreSQL
 ```
 
-## Módulos esperables
+## Flujo operativo representativo
 
-```text
-src/
-app.ts                app factory y composición
-server.ts             bootstrap del servidor
-lib/                  infraestructura transversal
-middleware/           auth, guards y validaciones comunes
-domain/               reglas de negocio por dominio
-routes/               superficie HTTP y separación por áreas
-```
+Un caso típico es el de una persona usuaria autenticada que necesita operar sobre información de un tenant específico. Orchestrator resuelve el contexto, verifica permisos, valida el input, aplica reglas de negocio y recién después persiste o devuelve una respuesta consistente al frontend.
 
-Aunque la estructura interna evolucione, la frontera conceptual es estable: HTTP en el borde, negocio en el dominio, persistencia detrás de una capa explícita.
+## Capas principales
+
+- borde HTTP para recibir requests y aplicar middleware transversal;
+- autenticación y autorización para identidad, roles y contexto de acceso;
+- servicios de dominio donde viven reglas, validaciones y coordinación;
+- persistencia y lectura optimizada detrás de una capa explícita.
+
+Aunque la estructura interna evolucione, la frontera conceptual se mantiene: HTTP en el borde, negocio en el dominio y datos detrás de contratos claros.
 
 ## Seguridad
 
