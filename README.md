@@ -15,6 +15,14 @@ Este repositorio funciona como vitrina pública de mi trabajo. Los repositorios 
 | **Sevastopol** | Frontend, BFF y experiencia de usuario | `Astro` `SolidJS` `Tailwind` | [projects/sevastopol.md](projects/sevastopol.md) |
 | **Jean d'Arc** | Documentación, arquitectura y guías operativas | `Astro Starlight` `Mermaid` | [projects/jean-d-arc.md](projects/jean-d-arc.md) |
 
+## Herramientas y extensiones
+
+Tooling propio creado para sostener el ecosistema. Repositorios operativos privados, documentos públicos sanitizados.
+
+| Herramienta | Tipo | Stack principal | Documento público |
+| :--- | :--- | :--- | :--- |
+| **Cortex** | Extensión VS Code | `TypeScript` `MongoDB` `React Flow` | [github.com/ChrisTkm/nostromo_cortex](https://github.com/ChrisTkm/nostromo_cortex) |
+
 ## Qué encontrarás aquí
 
 - Un resumen público por proyecto con su propósito, límites y arquitectura.
