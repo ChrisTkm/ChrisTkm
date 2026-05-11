@@ -22,6 +22,7 @@ Tooling propio creado para sostener el ecosistema. Repositorios operativos priva
 | Herramienta | Tipo | Stack principal | Documento público |
 | :--- | :--- | :--- | :--- |
 | **Cortex** | Extensión VS Code | `TypeScript` `MongoDB` `React Flow` | [github.com/ChrisTkm/nostromo_cortex](https://github.com/ChrisTkm/nostromo_cortex) |
+| **ai-voice** | Librería local de notificaciones por voz | `PowerShell` `C#` `Narakeet` | [github.com/ChrisTkm/ai-voice](https://github.com/ChrisTkm/ai-voice) |
 
 ## Qué encontrarás aquí
 
