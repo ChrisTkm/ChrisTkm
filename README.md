@@ -13,7 +13,7 @@ Este repositorio funciona como vitrina pública de mi trabajo. Los repositorios 
 | **Nostromo** | Core de datos, ETL y automatización | `Python` `PostgreSQL` `Data Engineering` | [projects/nostromo.md](projects/nostromo.md) |
 | **Orchestrator** | Backend de negocio, API y seguridad | `Node.js` `Express` `TypeScript` | [projects/orchestrator.md](projects/orchestrator.md) |
 | **Sevastopol** | Frontend, BFF y experiencia de usuario | `Astro` `SolidJS` `Tailwind` | [projects/sevastopol.md](projects/sevastopol.md) |
-| **Jean d'Arc** | Documentación, arquitectura y guías operativas | `Astro Starlight` `Mermaid` | [projects/jean-d-arc.md](projects/jean-d-arc.md) |
+| **Jean d'Arc** | Documentación, arquitectura y dominio contable | `Astro Starlight` `Mermaid` | [projects/jean-d-arc.md](projects/jean-d-arc.md) |
 
 ## Herramientas y extensiones
 

@@ -42,7 +42,7 @@ intro/                visión general y contexto
 arquitectura/         decisiones técnicas y modelos
 accounting/           documentación del dominio contable
 api/                  contratos y referencias de integración
-seguridad/            principios, límites y hardening
+seguridad/            principios y límites de seguridad
 guias/                flujos operativos y material de uso
 ```
 
