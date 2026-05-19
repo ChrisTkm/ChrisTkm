@@ -38,12 +38,14 @@ La documentación está pensada para más de un tipo de lector:
 ## Estructura documental
 
 ```text
-intro/                visión general y contexto
-arquitectura/         decisiones técnicas y modelos
+introduccion/         visión general y contexto
+arquitectura/         decisiones técnicas y diagramas
 accounting/           documentación del dominio contable
+orchestrator/         backend, servicios y monitoreo
+sevastopol/           frontend, islas y patrones de UI
+mother/               base PostgreSQL multi-tenant
 api/                  contratos y referencias de integración
 seguridad/            principios y límites de seguridad
-guias/                flujos operativos y material de uso
 ```
 
 La estructura exacta puede cambiar con el tiempo, pero la intención se mantiene: separar bien conocimiento conceptual, técnico y operativo.
@@ -51,7 +53,7 @@ La estructura exacta puede cambiar con el tiempo, pero la intención se mantiene
 ## Decisiones de plataforma
 
 - `Astro` como base ligera para publicar contenido técnico.
-- `Starlight` para ordenar navegación, versiones y lectura.
+- `Starlight` para ordenar navegación, búsqueda y lectura.
 - `Mermaid` para diagramas como código y mantenimiento simple.
 - Markdown como formato principal para facilitar revisión y edición.
 
@@ -83,7 +85,7 @@ Por diseño, esta vitrina pública omite:
 
 ## Relación con el ecosistema
 
-- documenta a `Nostromo`, `Orchestrator` y `Sevastopol`;
+- documenta a `Nostromo`, `Orchestrator`, `Sevastopol` y `Mother`;
 - ayuda a mantener alineadas arquitectura y operación;
 - reduce dependencia de conocimiento tribal.
 
