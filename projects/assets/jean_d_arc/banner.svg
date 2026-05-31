@@ -1,11 +1,11 @@
 <svg width="1500" height="500" viewBox="0 0 1500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="premium_gold" x1="0" y1="0" x2="868" y2="1543" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#BF953F"/>
-      <stop offset="0.25" stop-color="#FCF6BA"/>
-      <stop offset="0.5" stop-color="#BF953F"/>
-      <stop offset="0.75" stop-color="#FBF5B7"/>
-      <stop offset="1" stop-color="#AA771C"/>
+      <stop offset="0" stop-color="#C9962F"/>
+      <stop offset="0.25" stop-color="#F7DF93"/>
+      <stop offset="0.5" stop-color="#D9A53A"/>
+      <stop offset="0.75" stop-color="#F7DF93"/>
+      <stop offset="1" stop-color="#BC8722"/>
     </linearGradient>
     <filter id="dropshadow" height="130%">
       <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
@@ -37,6 +37,6 @@
   </g>
   
   <!-- Text -->
-  <text x="450" y="270" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="bold" font-size="120" fill="white" filter="url(#dropshadow)">Jean d'Arc</text>
-  <text x="455" y="340" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="40" fill="#AAAAAA" letter-spacing="2">DOCUMENTATION AGENT</text>
+  <text x="450" y="270" font-family="'Inter Variable', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-weight="bold" font-size="120" fill="white" filter="url(#dropshadow)">Jean d'Arc</text>
+  <text x="455" y="340" font-family="'Inter Variable', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="40" fill="#AAAAAA" letter-spacing="2">DOCUMENTACIÓN DEL ECOSISTEMA</text>
 </svg>

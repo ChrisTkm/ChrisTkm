@@ -4,51 +4,60 @@
 
 Plataforma de documentación, arquitectura y transferencia de conocimiento del ecosistema contable.
 
+**Sitio público:** [https://docs.albornoz.studio/](https://docs.albornoz.studio/)
+
 > [!NOTE]
 > Este resumen es público. Describe el propósito y la estructura documental del proyecto sin publicar material interno sensible ni documentación reservada para operación.
 
+[![Version](https://img.shields.io/badge/version-0.2.0-blue?style=flat-square)](https://docs.albornoz.studio/)
 [![Built with Astro](https://img.shields.io/badge/Built%20with-Astro-BC52EE?logo=astro&logoColor=white)](https://astro.build)
 [![Starlight](https://img.shields.io/badge/Doc-Starlight-ff5e00?style=flat-square&logo=astro)](https://starlight.astro.build/)
 [![Mermaid](https://img.shields.io/badge/Diagrams-Mermaid-ff3670?style=flat-square)](https://mermaid.js.org/)
 
 ## Qué resuelve
 
+<img align="right" src="assets/jean_d_arc/reading.png" alt="Jean d'Arc reading" width="240" />
+
 Jean d'Arc existe para evitar que el conocimiento técnico termine repartido entre chats, memoria informal, comentarios incompletos o decisiones difíciles de reconstruir después.
 
 Su propósito es concentrar la documentación necesaria para que arquitectura, desarrollo, operación y onboarding compartan una misma referencia.
 
+## Dos zonas
+
+El sitio se organiza en dos lados paralelos:
+
+- **Lado Contable** — manual de cuentas chileno, IFRS, remuneraciones, operaciones SII, declaraciones, ciclo contable, balances, renta. Para contadores auditores, control interno y usuarios de validación financiera.
+- **Lado Desarrollador** — arquitectura, services del backend, API, frontend con islands reactivas, ETL Python, base de datos multi-tenant, seguridad. Para personas que construyen, mantienen o integran con el ecosistema.
+
+Cada página declara su audiencia (`auditor`, `dev` o `both`) en su frontmatter y enlaza con su contraparte cross-zone cuando aplica.
+
 ## Audiencias
 
-La documentación está pensada para más de un tipo de lector:
+La documentación está pensada para varios tipos de lector:
 
-- personas desarrolladoras que necesitan contexto técnico;
-- usuarios internos que requieren guías operativas;
-- futuros mantenedores que deben entender decisiones previas;
-- trabajo asistido por agentes o automatizaciones documentales.
+- **Contador auditor** que necesita criterios de reconocimiento, manual de cuentas, IFRS y trazabilidad de procesos contables;
+- **Persona desarrolladora** que requiere contexto técnico, contratos de API y patrones de integración;
+- **Usuarios internos** que consultan guías operativas;
+- **Futuros mantenedores** que deben entender decisiones previas;
+- **Trabajo asistido** por agentes o automatizaciones documentales.
 
 ## Tipos de contenido
 
 - visión general del ecosistema;
 - decisiones de arquitectura;
 - contratos y convenciones de integración;
-- guías funcionales y operativas;
+- criterios contables, tratamiento IFRS y guía tributaria;
 - documentación de módulos y dominios;
 - onboarding y material de referencia.
 
 ## Estructura documental
 
 ```text
-introduccion/         visión general y contexto
-arquitectura/         decisiones técnicas y diagramas
-accounting/           documentación del dominio contable
-orchestrator/         backend, servicios y monitoreo
-sevastopol/           frontend, islas y patrones de UI
-mother/               base PostgreSQL multi-tenant
-api/                  contratos y referencias de integración
-seguridad/            principios y límites de seguridad
+accounting/   Lado Contable: dominio contable, IFRS, remuneraciones, manual de cuentas
+dev/          Lado Desarrollador: arquitectura, backend, frontend, ETL, seguridad
 ```
 
-La estructura exacta puede cambiar con el tiempo, pero la intención se mantiene: separar bien conocimiento conceptual, técnico y operativo.
+Cada zona se subdivide en dominios específicos. La estructura exacta puede cambiar con el tiempo, pero la dualidad Contable / Desarrollador se mantiene como columna principal.
 
 ## Decisiones de plataforma
 
