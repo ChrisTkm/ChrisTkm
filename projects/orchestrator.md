@@ -11,12 +11,26 @@ Backend de negocio, API y seguridad del ecosistema contable.
 [![TypeScript](https://img.shields.io/badge/Lang-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Express](https://img.shields.io/badge/Framework-Express%205-000000?style=flat-square&logo=express&logoColor=white)](https://expressjs.com/)
 [![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![Tests](https://img.shields.io/badge/Tests-Jest-99425B?style=flat-square&logo=jest&logoColor=white)](https://jestjs.io/)
 
 ## Qué resuelve
 
 Orchestrator concentra la lógica de negocio que no debe quedar dispersa entre pantallas, scripts o decisiones ad hoc. Es la capa que valida, autoriza, compone reglas y protege la consistencia transaccional del sistema.
 
 Su rol es sencillo de definir y difícil de reemplazar: actuar como fuente de verdad operacional.
+
+## En números
+
+| Métrica | Valor |
+|---|---|
+| Dominios de negocio | **33** |
+| Archivos de prueba | **111** (unit + integración) |
+| Líneas de código en `src/` | **~79.500** |
+| · de las cuales dominio | **~44.000** |
+| · de las cuales pruebas | **~19.200** |
+| Bases de datos coordinadas | **3** (central · común · template por tenant) |
+
+> Los números reflejan tamaño real del proyecto, no completitud funcional. La arquitectura sostiene crecimiento sin reescritura.
 
 ## Responsabilidades
 
@@ -35,28 +49,75 @@ El backend sigue una estrategia híbrida:
 - las lecturas pesadas y reportes pueden apoyarse en SQL y vistas optimizadas;
 - la seguridad y el contexto de acceso atraviesan el request desde el borde.
 
-```text
-Cliente / Frontend
-   -> middleware de autenticación
-   -> autorización por rol
-   -> validación de input
-   -> servicio de dominio
-   -> repositorio / acceso a datos
-   -> PostgreSQL
+```mermaid
+flowchart LR
+    Client["Frontend / cliente autorizado"] --> Edge["Borde HTTP<br/>middleware transversal"]
+    Edge --> Auth["Autenticación<br/>+ autorización por rol"]
+    Auth --> Validate["Validación de input"]
+    Validate --> Service["Servicios de dominio<br/>reglas + coordinación"]
+    Service --> Repo["Repositorios<br/>acceso a datos"]
+    Repo --> PG[("PostgreSQL<br/>multi-tenant")]
+    Service -.->|eventos<br/>tras COMMIT| Bus(["Domain Event Bus"])
+    Bus -.-> Listeners["Listeners<br/>por dominio"]
+
+    classDef edge fill:#1e293b,color:#f8fafc,stroke:#475569
+    classDef domain fill:#0f172a,color:#f8fafc,stroke:#3b82f6
+    classDef data fill:#082f49,color:#f0f9ff,stroke:#0ea5e9
+    class Edge,Auth,Validate edge
+    class Service,Repo,Bus,Listeners domain
+    class PG data
 ```
 
-## Flujo operativo representativo
-
-Un caso típico es el de una persona usuaria autenticada que necesita operar sobre información de un tenant específico. Orchestrator resuelve el contexto, verifica permisos, valida el input, aplica reglas de negocio y recién después persiste o devuelve una respuesta consistente al frontend.
+Los eventos de dominio se emiten **después del commit** transaccional, no durante: si la transacción falla, no hay efectos fantasma río abajo.
 
 ## Capas principales
 
-- borde HTTP para recibir requests y aplicar middleware transversal;
-- autenticación y autorización para identidad, roles y contexto de acceso;
-- servicios de dominio donde viven reglas, validaciones y coordinación;
-- persistencia y lectura optimizada detrás de una capa explícita.
+- **borde HTTP** para recibir requests y aplicar middleware transversal;
+- **autenticación y autorización** para identidad, roles y contexto de acceso;
+- **servicios de dominio** donde viven reglas, validaciones y coordinación;
+- **persistencia y lectura optimizada** detrás de una capa explícita;
+- **bus de eventos de dominio** para reaccionar a cambios sin acoplar servicios.
 
-Aunque la estructura interna evolucione, la frontera conceptual se mantiene: HTTP en el borde, negocio en el dominio y datos detrás de contratos claros.
+## Forma de un servicio de dominio
+
+> Snippet representativo, no extraído del código real. Ilustra el patrón compartido entre servicios.
+
+```typescript
+class ExampleService extends BaseService {
+  async create(ctx: ServiceContext, input: ExampleInput): Promise<Example> {
+    this.validateInput(input);
+
+    return this.withTransaction(ctx, async (tx, outbox) => {
+      const created = await this.repo.insert(tx, input);
+
+      outbox.queue("example.created", {
+        tenantId: ctx.tenantDb,
+        entityId: created.id,
+      });
+
+      return created;
+    });
+  }
+}
+```
+
+Tres invariantes que sostiene este patrón:
+
+1. La validación corre **antes** de tocar la base.
+2. La escritura es **transaccional** end-to-end.
+3. Los eventos se emiten **después del commit**, no en medio.
+
+## Dominios cubiertos
+
+El backend está organizado en módulos por área de negocio. Cada dominio tiene su servicio, su repositorio, sus tipos y sus pruebas, sin filtrar lógica a otras capas.
+
+| Área | Dominios |
+|---|---|
+| **Contable nuclear** | Plan de cuentas · Ciclo contable · Configuración contable · Reportes |
+| **Operaciones** | Operaciones · Gastos · Financieros · Inventario · Activos fijos |
+| **Tributario** | Declaraciones mensuales · Declaraciones juradas |
+| **Laboral / RRHH** | Remuneraciones · Empleados · Contratos · Asistencia · Vacaciones · Isapre · Previsionales · Finiquitos · Jornadas · Honorarios · Cargos |
+| **Sistema y acceso** | Autenticación · Permisos · Empresas · Capital · Representantes legales · Configuración de sistema · Caché |
 
 ## Seguridad
 
@@ -79,11 +140,23 @@ La seguridad no es una capa decorativa. Forma parte del flujo normal del backend
 
 Orchestrator está pensado para sostener pruebas en más de un nivel:
 
-- unitarias para servicios y utilidades;
-- integración para rutas y persistencia;
-- end-to-end para flujos críticos expuestos al usuario.
+- **unitarias** para servicios y utilidades;
+- **integración** para rutas y persistencia contra PostgreSQL real;
+- **end-to-end** para flujos críticos expuestos al usuario.
 
-No todo se publica aquí, pero el criterio es claro: la capa central del negocio debe ser verificable.
+Los 111 archivos de prueba se distribuyen entre los 33 dominios, no concentrados en una sola capa. El criterio es claro: la capa central del negocio debe ser verificable.
+
+## Stack técnico
+
+| Capa | Elección |
+|---|---|
+| Runtime | Node.js 20+ |
+| Lenguaje | TypeScript |
+| HTTP | Express 5 |
+| Persistencia | PostgreSQL · `pg` |
+| Validación | `express-validator` |
+| Pruebas | Jest |
+| Observabilidad | Logger estructurado + endpoint Prometheus |
 
 ## Límites públicos
 
