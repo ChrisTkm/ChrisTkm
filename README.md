@@ -8,27 +8,27 @@ Este repositorio funciona como vitrina pública de mi trabajo. Los repositorios 
 
 ## Ecosistema
 
-| Proyecto | Rol | Stack principal | Documento público |
-| :--- | :--- | :--- | :--- |
-| **Nostromo** | Core de datos, ETL y automatización | `Python` `PostgreSQL` `Data Engineering` | [projects/nostromo.md](projects/nostromo.md) |
-| **Orchestrator** | Backend de negocio, API y seguridad | `Node.js` `Express` `TypeScript` | [projects/orchestrator.md](projects/orchestrator.md) |
-| **Sevastopol** | Frontend, BFF y experiencia de usuario | `Astro` `SolidJS` `Tailwind` | [projects/sevastopol.md](projects/sevastopol.md) |
-| **Jean d'Arc** | Documentación, arquitectura y dominio contable | `Astro Starlight` `Mermaid` | [projects/jean-d-arc.md](projects/jean-d-arc.md) |
+| Proyecto | Rol | Stack principal | Visibilidad | Más info |
+| :--- | :--- | :--- | :--- | :--- |
+| **Nostromo** | Core de datos, ETL y automatización | `Python` `PostgreSQL` `Data Engineering` | 🔒 privado | [projects/nostromo.md](projects/nostromo.md) |
+| **Orchestrator** | Backend de negocio, API y seguridad | `Node.js` `Express` `TypeScript` | 🔒 privado | [projects/orchestrator.md](projects/orchestrator.md) |
+| **Sevastopol** | Frontend, BFF y experiencia de usuario | `Astro` `SolidJS` `Tailwind` | 🔒 privado | [projects/sevastopol.md](projects/sevastopol.md) |
+| **Jean d'Arc** | Documentación, arquitectura y dominio contable | `Astro Starlight` `Mermaid` | 🌐 [docs.albornoz.studio](https://docs.albornoz.studio/) | [projects/jean-d-arc.md](projects/jean-d-arc.md) |
+
+## Cómo navegar este portafolio
+
+1. **Escaneo rápido** → la tabla de arriba.
+2. **Resumen sanitizado por proyecto** → `projects/*.md`. Una página por componente con su propósito, arquitectura y límites públicos.
+3. **Inmersión técnica completa** → [docs.albornoz.studio](https://docs.albornoz.studio/) (Jean d'Arc). Es el único proyecto público del ecosistema y documenta a Orchestrator y Sevastopol con más profundidad que esta vitrina.
+
+Si te interesa la arquitectura backend, empezá por [`orchestrator.md`](projects/orchestrator.md). Si te interesa el dominio contable, empezá por [`jean-d-arc.md`](projects/jean-d-arc.md) y de ahí al sitio.
 
 ## Herramientas y extensiones
 
 Tooling propio creado para sostener el ecosistema. Repositorios operativos privados, documentos públicos sanitizados.
 
-| Herramienta | Tipo | Stack principal | Documento público |
-| :--- | :--- | :--- | :--- |
-| **Cortex** | Extensión VS Code | `TypeScript` `MongoDB` `React Flow` | [github.com/ChrisTkm/nostromo_cortex](https://github.com/ChrisTkm/nostromo_cortex) |
-| **ai-voice** | Librería local de notificaciones por voz | `PowerShell` `C#` `Narakeet` | [github.com/ChrisTkm/ai-voice](https://github.com/ChrisTkm/ai-voice) |
-
-## Qué encontrarás aquí
-
-- Un resumen público por proyecto con su propósito, límites y arquitectura.
-- Explicaciones suficientes para entender cómo se integran entre sí.
-- Información sanitizada: sin credenciales, sin esquemas sensibles, sin endpoints internos ni detalles de despliegue reservados.
+- **[Cortex](https://github.com/ChrisTkm/nostromo_cortex)** — Extensión VS Code para visualización de planes de trabajo y notas técnicas en grafos PERT/DAG. `TypeScript` · `MongoDB` · `React Flow`
+- **[ai-voice](https://github.com/ChrisTkm/ai-voice)** — Librería local de notificaciones por voz integrada al flujo de desarrollo. `PowerShell` · `C#` · `Narakeet`
 
 ## Qué problemas ataca este ecosistema
 
@@ -44,22 +44,15 @@ Tooling propio creado para sostener el ecosistema. Repositorios operativos priva
 - La documentación no es un accesorio; es parte del sistema.
 - La automatización tiene que reducir errores operativos, no solo ahorrar clicks.
 
-## Stack
-
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![Astro](https://img.shields.io/badge/Astro-BC52EE?style=flat-square&logo=astro&logoColor=white)
-![SolidJS](https://img.shields.io/badge/SolidJS-2C4F7C?style=flat-square&logo=solid&logoColor=white)
-![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-
 ## Estado del sistema
+
+Snapshot del estado público del ecosistema — proyectos activos, stack consolidado y métricas agregadas.
 
 ![System Status](assets/status_card.svg)
 
 ## Contacto
 
-- Email: [chris@albornoz.studio](mailto:chris@albornoz.studio)
-- Ubicación: Santiago, Chile
+- **Email** — [chris@albornoz.studio](mailto:chris@albornoz.studio)
+- **GitHub** — [github.com/ChrisTkm](https://github.com/ChrisTkm)
+- **Documentación pública** — [docs.albornoz.studio](https://docs.albornoz.studio/)
+- **Ubicación** — Santiago, Chile
