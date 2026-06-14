@@ -6,29 +6,32 @@ Contador Auditor reconvertido en ingeniero de software. Trabajo en productos don
 
 Este repositorio funciona como vitrina pública de mi trabajo. Los repositorios operativos del ecosistema son privados, así que aquí concentro una versión publicable de su contexto, sus decisiones arquitectónicas y el rol que cumple cada pieza.
 
-## Ecosistema
+## Ecosistema — Albornoz Accounting
 
-| Proyecto | Rol | Stack principal | Visibilidad | Más info |
+El sistema contable multi-tenant. Tres capas con fronteras nítidas: Nostromo carga los datos, Orchestrator decide, Sevastopol muestra.
+
+| Proyecto | Rol | Stack principal | Estado | Más info |
 | :--- | :--- | :--- | :--- | :--- |
-| **Nostromo** | Core de datos, ETL y automatización | `Python` `PostgreSQL` `Data Engineering` | 🔒 privado | [projects/nostromo.md](projects/nostromo.md) |
-| **Orchestrator** | Backend de negocio, API y seguridad | `Node.js` `Express` `TypeScript` | 🔒 privado | [projects/orchestrator.md](projects/orchestrator.md) |
-| **Sevastopol** | Frontend, BFF y experiencia de usuario | `Astro` `SolidJS` `Tailwind` | 🔒 privado | [projects/sevastopol.md](projects/sevastopol.md) |
-| **Jean d'Arc** | Documentación, arquitectura y dominio contable | `Astro Starlight` `Mermaid` | 🌐 [docs.albornoz.studio](https://docs.albornoz.studio/) | [projects/jean-d-arc.md](projects/jean-d-arc.md) |
+| **Nostromo** | Core de datos, ETL y automatización | `Python` · `PostgreSQL` · `Playwright` | 🔒 privado · beta `v0.1.0` en camino | [projects/nostromo.md](projects/nostromo.md) |
+| **Orchestrator** | Backend de negocio, API y seguridad | `Node.js` · `TypeScript` · `Express` | 🔒 privado · beta `v0.1.0` en camino | [projects/orchestrator.md](projects/orchestrator.md) |
+| **Sevastopol** | Frontend, BFF y experiencia de usuario | `Astro` · `SolidJS` · `Tailwind` | 🔒 privado · beta `v0.1.0` en camino | [projects/sevastopol.md](projects/sevastopol.md) |
+
+## Herramientas y documentación
+
+Documentación y tooling propio creados para sostener el ecosistema. Repos operativos privados; documentos públicos sanitizados.
+
+- **[Jean d'Arc](https://docs.albornoz.studio/)** — 🌐 live — Documentación, arquitectura y dominio contable del ecosistema, con lado contable y lado dev en paralelo. Único proyecto público del ecosistema. `Astro Starlight` · `Mermaid` · [doc](projects/jean-d-arc.md)
+- **[Cortex](https://marketplace.visualstudio.com/items?itemName=AlbornozStudio.cortex-local)** — 🟡 pre-alpha en Marketplace — Extensión de VS Code que visualiza el sistema (pipelines, planes en DAG/PERT, datos por tenant) y se integra con Claude Code. `TypeScript` · `MongoDB` · `React Flow` · [repo](https://github.com/ChrisTkm/nostromo_cortex)
+- **ai-skills** — 🔒 privado — Hub canónico de skills de IA reutilizables: una sola fuente de verdad sincronizada hacia Claude Code, Codex y GitHub Copilot, global y por repo. `Node.js` · `Tooling`
+- **[ai-voice](https://github.com/ChrisTkm/ai-voice)** — 🟢 `v0.1.0` — Capa local de notificaciones por voz: clips cortos por *intent* que traducen eventos de Claude Code, Codex y Copilot en señales auditivas. `PowerShell` · `Narakeet` _(C# inline para reproducción MP3 / fallback multimedia en Windows)_
 
 ## Cómo navegar este portafolio
 
-1. **Escaneo rápido** → la tabla de arriba.
+1. **Escaneo rápido** → las tablas de arriba.
 2. **Resumen sanitizado por proyecto** → `projects/*.md`. Una página por componente con su propósito, arquitectura y límites públicos.
-3. **Inmersión técnica completa** → [docs.albornoz.studio](https://docs.albornoz.studio/) (Jean d'Arc). Es el único proyecto público del ecosistema y documenta a Orchestrator y Sevastopol con más profundidad que esta vitrina.
+3. **Inmersión técnica completa** → [docs.albornoz.studio](https://docs.albornoz.studio/) (Jean d'Arc). Documenta a Orchestrator y Sevastopol con más profundidad que esta vitrina.
 
 Si te interesa la arquitectura backend, empezá por [`orchestrator.md`](projects/orchestrator.md). Si te interesa el dominio contable, empezá por [`jean-d-arc.md`](projects/jean-d-arc.md) y de ahí al sitio.
-
-## Herramientas y extensiones
-
-Tooling propio creado para sostener el ecosistema. Repositorios operativos privados, documentos públicos sanitizados.
-
-- **[Cortex](https://github.com/ChrisTkm/nostromo_cortex)** — Extensión VS Code para visualización de planes de trabajo y notas técnicas en grafos PERT/DAG. `TypeScript` · `MongoDB` · `React Flow`
-- **[ai-voice](https://github.com/ChrisTkm/ai-voice)** — Librería local de notificaciones por voz integrada al flujo de desarrollo. `PowerShell` · `C#` · `Narakeet`
 
 ## Qué problemas ataca este ecosistema
 
@@ -46,7 +49,7 @@ Tooling propio creado para sostener el ecosistema. Repositorios operativos priva
 
 ## Estado del sistema
 
-Snapshot del estado público del ecosistema — proyectos activos, stack consolidado y métricas agregadas.
+Snapshot del ecosistema — cada componente con su etapa de release y el stack consolidado.
 
 ![System Status](assets/status_card.svg)
 
