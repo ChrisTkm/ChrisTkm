@@ -24,7 +24,7 @@ Documentación y tooling propio creados para sostener el ecosistema. Repos opera
 - **[Cortex](https://marketplace.visualstudio.com/items?itemName=AlbornozStudio.cortex-local)** — 🟡 pre-alpha en Marketplace — Extensión de VS Code que visualiza el sistema (pipelines, planes en DAG/PERT, datos por tenant) y se integra con Claude Code. `TypeScript` · `MongoDB` · `React Flow` · [repo](https://github.com/ChrisTkm/nostromo_cortex)
 - **ai-skills** — 🔒 privado — Hub canónico de skills de IA reutilizables: una sola fuente de verdad sincronizada hacia Claude Code, Codex y GitHub Copilot, global y por repo. `Node.js` · `Tooling`
 - **[ai-voice](https://github.com/ChrisTkm/ai-voice)** — 🟢 `v0.1.0` — Capa local de notificaciones por voz: clips cortos por *intent* que traducen eventos de Claude Code, Codex y Copilot en señales auditivas. `PowerShell` · `Narakeet` _(C# inline para reproducción MP3 / fallback multimedia en Windows)_
-- **[Signal](https://github.com/ChrisTkm/ai-signal)** — 🟡 prototipo — Extensión liviana de VS Code y servidor MCP read-only que convierte actividad técnica pública en contexto local para asistentes de IA. `Node.js` · `VS Code` · `MCP` · [doc](projects/ai-signal.md)
+- **[Signal](https://github.com/ChrisTkm/ai-signal)** — 🟡 beta — Extensión liviana de VS Code y servidor MCP read-only que convierte actividad técnica pública en contexto local para asistentes de IA. `Node.js` · `VS Code` · `MCP` · [doc](projects/ai-signal.md)
 
 ## Cómo navegar este portafolio
 
